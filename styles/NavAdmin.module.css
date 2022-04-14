@@ -1,0 +1,11 @@
+.nav {
+  width: 90%;
+  background-color: #faf9f6e6 0% 0% no-repeat padding-box;
+  box-shadow: 6px 6px 6px #000;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}

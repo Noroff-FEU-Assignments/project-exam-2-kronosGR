@@ -1,0 +1,10 @@
+@import url('https://use.typekit.net/bln3izc.css');
+
+:root {
+  --color-white: '#FAF9F6';
+  --color-red: '#C20051';
+  --color-blue: '#032D51';
+
+  --font-heading: alkaline-caps, sans-serif;
+  --font-body: nunito-sans, sans-serif;
+}
