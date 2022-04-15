@@ -50,3 +50,11 @@ h6 {
 a {
   text-decoration: none;
 }
+
+#hamb {
+  display: none;
+}
+
+#hamb:checked ~ ul {
+  display: flex;
+}

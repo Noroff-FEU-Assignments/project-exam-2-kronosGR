@@ -10,51 +10,62 @@ export default function NavAdmin() {
     <nav className={styles.nav}>
       <Link href='/'>
         <a>
-          <Image src='/icons/logo.png' width={48} height={28} alt='Home' />
+          <Image src='/icons/logo.png' width={61} height={53} alt='Home' />
         </a>
       </Link>
-      <ul className={styles.nav_list}>
-        <li>
-          <NavigationItem
-            href='/'
-            src='/icons/home.svg'
-            width='22'
-            height='19'
-            alt='Home'
-          />
-        </li>
-        <li>
-          <Link href='/accommodations'>
-            <a>
-              <Image src='/icons/bed.svg' width={22} height={19} className='red' />
-              Accommodations
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/contact'>
-            <a>
-              <Image src='/icons/email.svg' width={22} height={19} className='red' />
-              Contact
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/favorites'>
-            <a>
-              <Image src='/icons/heart.svg' width={22} height={19} className='red' />
-              Favorites
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/contact'>
-            <a>
-              <Image src='/icons/user.svg' width={22} height={19} className='red' />
-              Login
-            </a>
-          </Link>
-        </li>
+      <label htmlFor='hamb' className={styles.hamb_icon}>
+        &#9776;
+      </label>
+      <input type='checkbox' id='hamb' />
+      <ul id='hamb-menu' className={styles.nav_list}>
+        <NavigationItem
+          href='/'
+          src='/icons/home.svg'
+          title='Home'
+          width='22'
+          height='19'
+          alt='Home'
+        />
+        <NavigationItem
+          href='/admin/'
+          src='/icons/user.svg'
+          title='Admin Panel'
+          width='22'
+          height='19'
+          alt='AdminPanel'
+        />
+        <NavigationItem
+          href='/admin/messages'
+          src='/icons/email.svg'
+          title='Messages'
+          width='22'
+          height='19'
+          alt='Messages'
+        />
+        <NavigationItem
+          href='/admin/enquiries'
+          src='/icons/question-mark.svg'
+          title='Enquiries'
+          width='22'
+          height='19'
+          alt='Enquiries'
+        />
+        <NavigationItem
+          href='/admin/add'
+          src='/icons/add.svg'
+          title='Add'
+          width='22'
+          height='19'
+          alt='add'
+        />
+        <NavigationItem
+          href='/admin/logout'
+          src='/icons/exit.svg'
+          title='Logout'
+          width='22'
+          height='19'
+          alt='Logout'
+        />
       </ul>
     </nav>
   );
