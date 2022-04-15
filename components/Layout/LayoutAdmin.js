@@ -1,8 +1,9 @@
 import React from 'react';
 import NavAdmin from './Navigation/NavAdmin';
-import { Head } from 'next/head';
 import Script from 'next/script';
 import Hero from './Navigation/Hero';
+
+import styles from '../../styles/LayoutAdmin.module.css';
 
 export default function LayoutAdmin({ children }) {
   return (
@@ -18,7 +19,7 @@ export default function LayoutAdmin({ children }) {
           <NavAdmin />
         </Hero>
       </header>
-      <main>{children}</main>;
+      <main className={styles.layout}>{children}</main>
     </>
   );
 }

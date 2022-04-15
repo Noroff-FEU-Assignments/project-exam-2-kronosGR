@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--color-red);
+  border-radius: 10px;
+  padding: 10px 25px 10px 10px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container:hover,
+.container:active {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-red);
+  color: var(--color-red);
+}
+
+.icon {
+  filter: var(--color-white-filter);
+}
+
+.container:hover .icon {
+  filter: var(--color-red-filter);
+}

@@ -1,0 +1,8 @@
+.link {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--font-body);
+  color: var(--color-black);
+  display: block;
+  margin-bottom: 1.1rem;
+}
