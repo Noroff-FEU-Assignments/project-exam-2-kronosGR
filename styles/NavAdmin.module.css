@@ -8,4 +8,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }

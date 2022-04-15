@@ -1,0 +1,10 @@
+.nav_a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  gap: 5px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: bold;
+}
