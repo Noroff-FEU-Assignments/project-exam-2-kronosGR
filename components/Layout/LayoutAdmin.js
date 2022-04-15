@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Hero from './Navigation/Hero';
 
 import styles from '../../styles/LayoutAdmin.module.css';
+import Footer from './Footer/Footer';
 
 export default function LayoutAdmin({ children }) {
   return (
@@ -20,6 +21,7 @@ export default function LayoutAdmin({ children }) {
         </Hero>
       </header>
       <main className={styles.layout}>{children}</main>
+      <Footer></Footer>
     </>
   );
 }

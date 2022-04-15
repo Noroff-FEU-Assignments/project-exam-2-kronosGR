@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import styles from '../../styles/Button.module.css';
-import { Colors } from '../../constants/Colors';
+import styles from '../styles/Button.module.css';
 import Image from 'next/image';
 
 export default function Button(props) {

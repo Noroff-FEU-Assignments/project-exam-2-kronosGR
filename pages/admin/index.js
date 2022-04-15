@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Button from '../../components/Layout/Button';
+import Button from '../../components/Button';
 import Center from '../../components/Layout/Center';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
 import Spacer from '../../components/Layout/Spacer';
