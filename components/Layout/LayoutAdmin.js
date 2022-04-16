@@ -5,6 +5,7 @@ import Hero from './Navigation/Hero';
 
 import styles from '../../styles/LayoutAdmin.module.css';
 import Footer from './Footer/Footer';
+import Spacer from './Spacer';
 
 export default function LayoutAdmin({ children }) {
   return (
@@ -21,7 +22,8 @@ export default function LayoutAdmin({ children }) {
         </Hero>
       </header>
       <main className={styles.layout}>{children}</main>
-      <Footer></Footer>
+      <Spacer size='4rem' />
+      <Footer />
     </>
   );
 }
