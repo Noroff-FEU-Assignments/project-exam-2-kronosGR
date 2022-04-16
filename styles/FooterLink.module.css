@@ -1,3 +1,4 @@
-.container:hover {
-  filter: invert(0.5);
+.test:hover {
+  fill: var(--color-black);
+  stroke: var(--color-white);
 }
