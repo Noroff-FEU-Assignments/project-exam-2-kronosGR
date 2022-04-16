@@ -19,7 +19,7 @@ export default function Admin() {
       </Link>
       <Spacer size='60px' />
       <Center>
-        <Button url='/admin/' color={Colors.white} width={150} title='Add' />
+        <Button url='/admin/add' color={Colors.white} width={150} title='Add' />
       </Center>
     </LayoutAdmin>
   );

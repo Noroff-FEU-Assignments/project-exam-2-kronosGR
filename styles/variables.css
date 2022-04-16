@@ -14,6 +14,6 @@
   --color-white-filter: brightness(0) saturate(100%) invert(100%) sepia(1%)
     saturate(5030%) hue-rotate(319deg) brightness(100%) contrast(96%);
 
-  --font-heading: alkaline-caps, sans-serif;
+  --font-heading: alkaline, sans-serif;
   --font-body: nunito-sans, sans-serif;
 }
