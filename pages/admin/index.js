@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Router from 'next/router';
 import Button from '../../components/Button';
 import Center from '../../components/Layout/Center';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
@@ -8,6 +9,9 @@ import { Colors } from '../../constants/Colors';
 import styles from '../../styles/Admin.module.css';
 
 export default function Admin() {
+  const clickHandler = () => {
+    Router.push('/admin/add');
+  };
   return (
     <LayoutAdmin>
       <h1 className='mb60'>ADMIN PANEL</h1>
@@ -19,7 +23,7 @@ export default function Admin() {
       </Link>
       <Spacer size='60px' />
       <Center>
-        <Button url='/admin/add' color={Colors.white} width={150} title='Add' />
+        <Button onClick={clickHandler} color={Colors.white} width={150} title='Add' />
       </Center>
     </LayoutAdmin>
   );
