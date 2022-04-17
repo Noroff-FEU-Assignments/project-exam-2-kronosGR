@@ -1,0 +1,36 @@
+.nav {
+  width: 90%;
+  background-color: #faf9f6e6 0% 0% no-repeat padding-box;
+  box-shadow: 6px 6px 6px #00000029;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 1rem;
+}
+
+.nav_list {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  background-color: var(--color-white);
+  width: 100%;
+  top: 80px;
+  opacity: 0.9;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hamb_icon {
+  font-size: 3rem;
+  color: var(--color-black);
+}

@@ -1,18 +1,18 @@
 import React from 'react';
-import NavAdmin from './Navigation/NavAdmin';
+import Hero from './Navigation/Hero';
 
 import styles from '../../styles/LayoutAdmin.module.css';
 import Footer from './Footer/Footer';
 import Spacer from './Spacer';
-import HeroAdmin from './Navigation/HeroAdmin';
+import Nav from './Navigation/Nav';
 
-export default function LayoutAdmin({ children }) {
+export default function Layout({ children }) {
   return (
     <>
       <header>
-        <HeroAdmin>
-          <NavAdmin />
-        </HeroAdmin>
+        <Hero>
+          <Nav />
+        </Hero>
       </header>
       <main className={styles.layout}>{children}</main>
       <Spacer size='4rem' />
