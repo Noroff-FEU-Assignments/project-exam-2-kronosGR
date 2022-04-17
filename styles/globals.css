@@ -52,6 +52,14 @@ a {
   text-decoration: none;
 }
 
+.alert-danger {
+  display: block;
+  text-align: left;
+  color: red;
+  margin: 1rem;
+  font-style: italic;
+}
+
 #hamb {
   display: none;
 }

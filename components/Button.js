@@ -6,12 +6,13 @@ import Image from 'next/image';
 
 export default function Button(props) {
   return (
-    <div
+    <button
+      type={props.type || 'button'}
       className={styles.container}
       style={{ width: props.width }}
       onClick={props.onClick}>
       <Image src={props.svg} className={styles.icon} alt='add' width={29} height={26} />
       {props.title}
-    </div>
+    </button>
   );
 }

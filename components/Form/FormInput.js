@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../../styles/FormInput.module.css';
 
-export default function FormInput({ id, title, placeholder, type, value, setValue }) {
+export default function FormInput({ id, title, placeholder, type, register }) {
   const handleInputChange = (event) => {
     setValue(event.target.value);
   };
@@ -12,12 +12,12 @@ export default function FormInput({ id, title, placeholder, type, value, setValu
         {title}
       </label>
       <input
-        value={value}
-        onChange={handleInputChange}
         className={styles.input}
         type={type}
         id={id}
+        name={id}
         placeholder={placeholder}
+        {...register}
       />
     </div>
   );

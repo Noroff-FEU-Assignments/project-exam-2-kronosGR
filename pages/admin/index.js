@@ -23,7 +23,13 @@ export default function Admin() {
       </Link>
       <Spacer size='60px' />
       <Center>
-        <Button onClick={clickHandler} color={Colors.white} width={150} title='Add' />
+        <Button
+          onClick={clickHandler}
+          color={Colors.white}
+          width={150}
+          title='Add'
+          svg='/icons/add.svg'
+        />
       </Center>
     </LayoutAdmin>
   );
