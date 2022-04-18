@@ -12,6 +12,7 @@ import Loader from '../../components/Loader';
 import Center from '../../components/Layout/Center';
 import Spacer from '../../components/Layout/Spacer';
 import SameLine from '../../components/Layout/SameLine';
+import FormImage from '../../components/Form/FormImage';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -153,6 +154,13 @@ export default function Admin() {
             )}
           </FormInput>
         </SameLine>
+
+        <FormImage
+          id='images'
+          title='Images'
+          multiple
+          register={{ ...register('images') }}
+        />
 
         <Spacer size={50} />
         <Button
