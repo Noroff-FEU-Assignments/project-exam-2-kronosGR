@@ -15,6 +15,7 @@ import { API_URL, AUTH } from '../constants/Api';
 
 import styles from '../styles/Login.module.css';
 import Loader from '../components/Loader';
+import { saveToLocalStorage, USER } from '../utils/localStorage';
 
 const loginSchema = yup.object().shape({
   email: yup
@@ -47,7 +48,9 @@ export default function Login() {
       });
 
       if (res.statusText) {
-        // console.log(res.data.jwt);
+        console.log(res);
+
+        saveToLocalStorage(USER, res.data);
         Router.push('/admin');
       } else {
         setError('Login problem');

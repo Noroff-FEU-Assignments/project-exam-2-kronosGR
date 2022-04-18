@@ -7,6 +7,7 @@ import Spacer from '../../components/Layout/Spacer';
 import { Colors } from '../../constants/Colors';
 
 import styles from '../../styles/Admin.module.css';
+import Auth from '../../components/Auth/Auth';
 
 export default function Admin() {
   const clickHandler = () => {
@@ -14,6 +15,7 @@ export default function Admin() {
   };
   return (
     <LayoutAdmin>
+      <Auth />
       <h1 className='mb60'>ADMIN PANEL</h1>
       <Link href='/admin/messages'>
         <a className={styles.link}>Messages</a>
