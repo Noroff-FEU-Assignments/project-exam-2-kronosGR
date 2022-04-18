@@ -40,7 +40,7 @@ export default function FormImage({
       <div className={styles.images}>
         {imagess &&
           imagess.map((item) => (
-            <img src={item} alt='uploaded image' className={styles.image} />
+            <img key={item} src={item} alt='uploaded image' className={styles.image} />
           ))}
       </div>
     </div>
