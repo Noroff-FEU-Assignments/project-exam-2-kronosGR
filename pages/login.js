@@ -72,7 +72,6 @@ export default function Login() {
           placeholder='Enter your email'
           id='email'
           type='text'
-          errors={errors}
           register={{ ...register('email') }}
         />
         {errors.email && <span className='alert-danger'>{errors.email.message}</span>}
