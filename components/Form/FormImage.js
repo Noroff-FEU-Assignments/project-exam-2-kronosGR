@@ -10,7 +10,7 @@ export default function FormImage({
   align = 'left',
   register,
 }) {
-  const [imagess, setImages] = useState();
+  const [images, setImages] = useState();
 
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -38,8 +38,8 @@ export default function FormImage({
         onChange={onImageChange}
       />
       <div className={styles.images}>
-        {imagess &&
-          imagess.map((item) => (
+        {images &&
+          images.map((item) => (
             <img key={item} src={item} alt='uploaded image' className={styles.image} />
           ))}
       </div>
