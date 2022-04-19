@@ -13,6 +13,8 @@ import Center from '../../components/Layout/Center';
 import Spacer from '../../components/Layout/Spacer';
 import SameLine from '../../components/Layout/SameLine';
 import FormImage from '../../components/Form/FormImage';
+import { ACCOMMODATIONS, API_URL } from '../../constants/Api';
+import FormAmenities from '../../components/Form/FormAmenities';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -56,7 +58,18 @@ export default function Admin() {
 
     console.log(data);
 
+    // const data = {
+    //   name: name,
+    //   description: d,
+    //   address:a,
+    //   bedrooms: b,
+    //   bathrooms: b,
+    //   priceday: a,
+    //   priceweek: a,
+    // };
+
     try {
+      // const res = await axios.post(API_URL + ACCOMMODATIONS, data);
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
@@ -154,6 +167,8 @@ export default function Admin() {
             )}
           </FormInput>
         </SameLine>
+
+        <FormAmenities />
 
         <FormImage
           id='images'

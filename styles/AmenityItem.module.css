@@ -1,0 +1,15 @@
+.container {
+  margin: 0.7rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.image {
+  filter: var(--color-black-filter);
+}
+
+.checkbox:checked ~ .image {
+  filter: var(--color-red-filter);
+}
