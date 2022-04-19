@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import FormInput from '../../components/Form/FormInput';
 import FormTextArea from '../../components/Form/FormTextArea';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '../../components/Button';
 import { Colors } from '../../constants/Colors';
 import Loader from '../../components/Loader';
@@ -15,6 +15,9 @@ import SameLine from '../../components/Layout/SameLine';
 import FormImage from '../../components/Form/FormImage';
 import { ACCOMMODATIONS, API_URL } from '../../constants/Api';
 import FormAmenities from '../../components/Form/FormAmenities';
+import { amenities } from '../../constants/Amenities';
+import axios from 'axios';
+import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -43,8 +46,29 @@ const addSchema = yup.object().shape({
 });
 
 export default function Admin() {
+  const initialState = {
+    'WI-FI': false,
+    'Swimming Pool': false,
+    'Child Friendly': false,
+    Accessible: false,
+    'Washing Machine': false,
+    Fitness: false,
+  };
+
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [amenitiesList, setAmenitiesList] = useState(initialState);
+
+  const toggleAmenities = (e) => {
+    const name = e.target.name;
+    const checked = e.target.checked;
+
+    setAmenitiesList({ ...amenitiesList, [name]: checked });
+  };
+
+  // useEffect(() => {
+  //   console.log(amenitiesList);
+  // }, [amenitiesList]);
 
   const {
     register,
@@ -56,20 +80,52 @@ export default function Admin() {
     setIsLoading(true);
     setError(null);
 
-    console.log(data);
+    const dataToSend = {
+      name: data.accname,
+      description: data.description,
+      address: data.address,
+      bedrooms: data.bedrooms,
+      bathrooms: data.bathrooms,
+      priceday: data.priceDay,
+      priceweek: data.priceWeek,
+      amenities: JSON.stringify(amenitiesList),
+    };
 
-    // const data = {
-    //   name: name,
-    //   description: d,
-    //   address:a,
-    //   bedrooms: b,
-    //   bathrooms: b,
-    //   priceday: a,
-    //   priceweek: a,
-    // };
+    console.log(dataToSend);
+    const user = loadFromLocalStorage(USER);
 
+    let id = 0;
     try {
-      // const res = await axios.post(API_URL + ACCOMMODATIONS, data);
+      const res = await axios.post(API_URL + ACCOMMODATIONS, dataToSend, {
+        headers: {
+          Authorization: `Bearer ${user.jwt}`,
+        },
+      });
+
+      id = res.data.id;
+      console.log(res);
+
+      const formData = new FormData();
+
+      for (let i = 0; i < data.images.length; i++) {
+        console.log(data.images.item(i).name);
+        formData.append('files', data.images.item(i), data.images.item(i).name);
+      }
+
+      console.log(id);
+      formData.append('ref', 'accomondations');
+      formData.append('refId', id);
+      formData.append('field', 'images');
+      console.log(formData);
+
+      const resI = await axios.post(API_URL + 'upload', formData, {
+        headers: {
+          Authorization: `Bearer ${user.jwt}`,
+        },
+      });
+      console.log(resI);
+
+      // console.log(data.images);
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
@@ -168,7 +224,7 @@ export default function Admin() {
           </FormInput>
         </SameLine>
 
-        <FormAmenities />
+        <FormAmenities handleAmenities={toggleAmenities} />
 
         <FormImage
           id='images'

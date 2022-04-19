@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 import styles from '../../styles/AmenityItem.module.css';
@@ -14,7 +13,14 @@ export default function AmenityItem({ src, alt, width, height, onToggle }) {
           className={styles.checkbox}
           onChange={onToggle}
         />
-        <img src={src} alt={alt} width={width} height={height} className={styles.image} />
+        <img
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          onChange={onToggle}
+          className={styles.image}
+        />
       </label>
     </div>
   );

@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import styles from '../../styles/FormAmenities.module.css';
 import { amenities } from '../../constants/Amenities';
 import AmenityItem from './AmenityItem';
 
-export default function FormAmenities({ register }) {
-  const [amenities, setAmenities] = useState([]);
-
-  const clickHandler = () => {};
-
+export default function FormAmenities({ handleAmenities }) {
   return (
     <div className={styles.container}>
       <label className={styles.label}>Amenities</label>
@@ -21,7 +17,7 @@ export default function FormAmenities({ register }) {
               alt={item.name}
               width={30}
               height={27}
-              onToggle={clickHandler}
+              onToggle={handleAmenities}
             />
           ))}
       </div>
