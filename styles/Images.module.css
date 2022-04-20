@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.image_container {
+  width: 170px;
+  height: 120px;
+  position: relative;
+}
+
 .image {
   object-fit: cover;
+  width: 100%;
 }
