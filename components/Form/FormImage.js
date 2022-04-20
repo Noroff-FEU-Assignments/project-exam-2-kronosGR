@@ -19,6 +19,8 @@ export const FormImage = React.forwardRef(
           tmp.push(URL.createObjectURL(v));
         }
         setImages(tmp);
+      } else {
+        setImages(null);
       }
     };
 
