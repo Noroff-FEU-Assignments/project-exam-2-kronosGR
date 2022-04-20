@@ -5,19 +5,21 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import FormInput from '../../components/Form/FormInput';
 import FormTextArea from '../../components/Form/FormTextArea';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../../components/Button';
 import { Colors } from '../../constants/Colors';
 import Loader from '../../components/Loader';
 import Center from '../../components/Layout/Center';
 import Spacer from '../../components/Layout/Spacer';
 import SameLine from '../../components/Layout/SameLine';
-import FormImage from '../../components/Form/FormImage';
+import { FormImage } from '../../components/Form/FormImage';
 import { ACCOMMODATIONS, API_URL } from '../../constants/Api';
 import FormAmenities from '../../components/Form/FormAmenities';
 import axios from 'axios';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
-import Router from 'next/router';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -62,6 +64,7 @@ export default function Admin() {
     Fitness: false,
   };
 
+  const imagesRef = React.useRef();
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [amenitiesList, setAmenitiesList] = useState(initialState);
@@ -80,6 +83,7 @@ export default function Admin() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ resolver: yupResolver(addSchema) });
 
@@ -129,7 +133,17 @@ export default function Admin() {
       });
       setIsLoading(false);
       //Router.push('/admin/');
-      data = {};
+      toast('Accommodation added!', {
+        position: 'bottom-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      reset();
+      imagesRef.current.setImages(null);
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
@@ -139,6 +153,7 @@ export default function Admin() {
 
   return (
     <LayoutAdmin>
+      <ToastContainer />
       <h1 className='mb60'>Add</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormInput
@@ -234,6 +249,7 @@ export default function Admin() {
           title='Images'
           multiple
           register={{ ...register('images') }}
+          ref={imagesRef}
         />
         {errors.images && <span className='alert-danger'>{errors.images.message}</span>}
 
