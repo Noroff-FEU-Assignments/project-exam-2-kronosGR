@@ -23,7 +23,7 @@ export default function Admin() {
       <Link href='/admin/enquires'>
         <a className={styles.link}>Enquiries</a>
       </Link>
-      <Spacer size='60px' />
+      <Spacer size='60' />
       <Center>
         <Button
           onClick={clickHandler}
@@ -33,6 +33,7 @@ export default function Admin() {
           svg='/icons/add.svg'
         />
       </Center>
+      <Spacer size='60' />
     </LayoutAdmin>
   );
 }

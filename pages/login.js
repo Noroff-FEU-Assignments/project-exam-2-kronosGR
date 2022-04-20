@@ -86,7 +86,7 @@ export default function Login() {
         {errors.password && (
           <span className='alert-danger'>{errors.password.message}</span>
         )}
-        <Spacer size='60px' />
+        <Spacer size='60' />
         <Center>
           <Button
             svg='/icons/send.svg'
