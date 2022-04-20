@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import FormInput from '../../components/Form/FormInput';
 import FormTextArea from '../../components/Form/FormTextArea';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Button from '../../components/Button';
 import { Colors } from '../../constants/Colors';
 import Loader from '../../components/Loader';
@@ -15,9 +15,9 @@ import SameLine from '../../components/Layout/SameLine';
 import FormImage from '../../components/Form/FormImage';
 import { ACCOMMODATIONS, API_URL } from '../../constants/Api';
 import FormAmenities from '../../components/Form/FormAmenities';
-import { amenities } from '../../constants/Amenities';
 import axios from 'axios';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
+import Router from 'next/router';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -118,10 +118,11 @@ export default function Admin() {
           Authorization: `Bearer ${user.jwt}`,
         },
       });
+      setIsLoading(false);
+      Router.push('/admin/');
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
-    } finally {
       setIsLoading(false);
     }
   };
