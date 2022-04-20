@@ -43,6 +43,13 @@ const addSchema = yup.object().shape({
     .required('Please enter price')
     .min(1, 'Minimum 1')
     .typeError('Amount must be a number'),
+  images: yup
+    .mixed()
+    .required('Please select at least one Image')
+    .test('fileSize', 'Please select at least one image', (value) => {
+      console.log(value);
+      return value && value.length > 0;
+    }),
 });
 
 export default function Admin() {
@@ -79,6 +86,8 @@ export default function Admin() {
   const onSubmit = async (data) => {
     setIsLoading(true);
     setError(null);
+
+    console.log(data);
 
     const dataToSend = {
       name: data.accname,
@@ -119,7 +128,8 @@ export default function Admin() {
         },
       });
       setIsLoading(false);
-      Router.push('/admin/');
+      //Router.push('/admin/');
+      data = {};
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
@@ -225,6 +235,7 @@ export default function Admin() {
           multiple
           register={{ ...register('images') }}
         />
+        {errors.images && <span className='alert-danger'>{errors.images.message}</span>}
 
         <Spacer size={50} />
         <Button
