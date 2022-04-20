@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image {
+  object-fit: cover;
+}
