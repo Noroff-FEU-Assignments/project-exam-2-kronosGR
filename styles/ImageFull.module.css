@@ -7,6 +7,10 @@
   z-index: 10;
 }
 
+.container:hover {
+  cursor: zoom-out;
+}
+
 .image {
   object-fit: contain;
   width: 100%;
