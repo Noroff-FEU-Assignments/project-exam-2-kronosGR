@@ -91,7 +91,6 @@ export default function Admin() {
       amenities: JSON.stringify(amenitiesList),
     };
 
-    console.log(dataToSend);
     const user = loadFromLocalStorage(USER);
 
     let id = 0;
@@ -103,29 +102,22 @@ export default function Admin() {
       });
 
       id = res.data.id;
-      console.log(res);
 
       const formData = new FormData();
 
       for (let i = 0; i < data.images.length; i++) {
-        console.log(data.images.item(i).name);
         formData.append('files', data.images.item(i), data.images.item(i).name);
       }
 
-      console.log(id);
       formData.append('ref', 'accomondations');
       formData.append('refId', id);
       formData.append('field', 'images');
-      console.log(formData);
 
       const resI = await axios.post(API_URL + 'upload', formData, {
         headers: {
           Authorization: `Bearer ${user.jwt}`,
         },
       });
-      console.log(resI);
-
-      // console.log(data.images);
     } catch (err) {
       console.log('add error', err);
       setError(err.toString());
@@ -246,7 +238,7 @@ export default function Admin() {
       {isLoading && <Loader />}
       {error && (
         <Center>
-          <div className='alert-danger'>Problem with login credentials</div>
+          <div className='alert-danger'>There was a problem adding the accommodation</div>
         </Center>
       )}
     </LayoutAdmin>
