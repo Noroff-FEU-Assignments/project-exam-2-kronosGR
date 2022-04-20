@@ -1,0 +1,35 @@
+.container {
+  box-shadow: 6px 6px 6px #00000029;
+  border-radius: 10px;
+  width: 370px;
+  height: 320px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px !important;
+}
+
+.title {
+  z-index: 2222;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  background: var(--color-white) 0% 0% no-repeat padding-box;
+  opacity: 0.8;
+}
+
+.title:hover {
+  background: var(--color-black) 0% 0% no-repeat padding-box;
+  opacity: 0.8;
+  color: var(--color-white);
+}
