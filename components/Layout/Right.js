@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function Right({ children }) {
-  return <div style={{ display: 'flex', justifyContent: 'right' }}>{children}</div>;
+export default function Right({ children, className }) {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'right' }} className={className}>
+      {children}
+    </div>
+  );
 }

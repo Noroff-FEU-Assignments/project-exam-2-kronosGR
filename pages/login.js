@@ -48,8 +48,6 @@ export default function Login() {
       });
 
       if (res.statusText) {
-        console.log(res);
-
         saveToLocalStorage(USER, res.data);
         Router.push('/admin');
       } else {

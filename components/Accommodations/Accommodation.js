@@ -1,24 +1,17 @@
-import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
-import { API_URL } from '../../constants/Api';
 
 import styles from '../../styles/Accommodation.module.css';
 import Button from '../Button';
 import Right from '../Layout/Right';
-import Spacer from '../Layout/Spacer';
+import { AccommodationImage } from './AccommodationImage';
 
 export const Accommodation = ({ item }) => {
-  console.log(item);
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
-      <div className={styles.image_container}>
-        <Image
-          className={styles.image}
-          src={API_URL + item.images[0].formats.medium.url}
-          layout='fill'
-          alt={item.name}
-        />
-      </div>
+      <AccommodationImage item={item} />
       <span className={styles.title}>{item.name}</span>
       <p className={styles.description}>{`${item.description.substr(0, 100)}...`}</p>
       <div className={styles.prices}>
@@ -26,8 +19,14 @@ export const Accommodation = ({ item }) => {
         <span className={styles.price}>{`$${item.priceweek}/Week`}</span>
       </div>
 
-      <Right>
-        <Button svg='/icons/more.svg' onClick={() => {}} title='More' />
+      <Right className={styles.button}>
+        <Button
+          svg='/icons/more.svg'
+          onClick={() => {
+            router.push(`/${item.id}`);
+          }}
+          title='More'
+        />
       </Right>
     </div>
   );

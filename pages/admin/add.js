@@ -91,8 +91,6 @@ export default function Admin() {
     setIsLoading(true);
     setError(null);
 
-    console.log(data);
-
     const dataToSend = {
       name: data.accname,
       description: data.description,
