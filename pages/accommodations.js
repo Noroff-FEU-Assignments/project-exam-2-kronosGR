@@ -2,14 +2,17 @@ import { AccommodationsList } from '../components/Accommodations/AccommodationsL
 import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getAccommodations } from '../BackEnd/getAccommodations';
+import { Error } from '../components/Error';
 
 export default function Accommodations({ accommodations, error }) {
   return (
     <Layout>
       <Spacer size={30} />
       <h1>Accommodations</h1>
-
-      <AccommodationsList accommodations={accommodations} />
+      {accommodations.length > 0 && (
+        <AccommodationsList accommodations={accommodations} />
+      )}
+      <Error error='Something went wrong. We apologize' />
 
       <Spacer size={60} />
     </Layout>
@@ -18,8 +21,7 @@ export default function Accommodations({ accommodations, error }) {
 
 export async function getServerSideProps(context) {
   const res = await getAccommodations();
-  console.log(res.result);
-
+  console.log(res.error);
   return {
     props: { accommodations: res.result, error: res.error },
   };

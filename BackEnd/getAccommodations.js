@@ -6,7 +6,11 @@ export const getAccommodations = async () => {
 
   try {
     const res = await axios.get(API_URL + ACCOMMODATIONS);
-    ret.result = res.data;
+    if (Array.isArray(res.data)) {
+      ret.result = res.data;
+    } else {
+      throw new Error('Something went wrong');
+    }
   } catch (err) {
     ret.error = err.stack;
   }
