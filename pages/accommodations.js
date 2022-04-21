@@ -12,7 +12,7 @@ export default function Accommodations({ accommodations, error }) {
       {accommodations.length > 0 && (
         <AccommodationsList accommodations={accommodations} />
       )}
-      <Error error='Something went wrong. We apologize' />
+      <Error msg='Something went wrong. We apologize' error={error} />
 
       <Spacer size={60} />
     </Layout>
