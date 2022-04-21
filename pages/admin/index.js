@@ -8,11 +8,14 @@ import { Colors } from '../../constants/Colors';
 
 import styles from '../../styles/Admin.module.css';
 import Auth from '../../components/Auth/Auth';
+import { Toast } from '../../components/Layout/Toast';
+import { useState } from 'react';
 
 export default function Admin() {
   const clickHandler = () => {
     Router.push('/admin/add');
   };
+
   return (
     <LayoutAdmin>
       <Auth />

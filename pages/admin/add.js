@@ -17,9 +17,7 @@ import { ACCOMMODATIONS, API_URL } from '../../constants/Api';
 import FormAmenities from '../../components/Form/FormAmenities';
 import axios from 'axios';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Toast } from '../../components/Layout/Toast';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -49,7 +47,6 @@ const addSchema = yup.object().shape({
     .mixed()
     .required('Please select at least one Image')
     .test('fileSize', 'Please select at least one image', (value) => {
-      console.log(value);
       return value && value.length > 0;
     }),
 });
@@ -68,6 +65,9 @@ export default function Admin() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [amenitiesList, setAmenitiesList] = useState(initialState);
+
+  // Toast
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleAmenities = (e) => {
     const name = e.target.name;
@@ -132,16 +132,8 @@ export default function Admin() {
         },
       });
       setIsLoading(false);
-      //Router.push('/admin/');
-      toast('Accommodation added!', {
-        position: 'bottom-right',
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+
+      setIsVisible(true);
       reset();
       imagesRef.current.setImages(null);
     } catch (err) {
@@ -153,7 +145,11 @@ export default function Admin() {
 
   return (
     <LayoutAdmin>
-      <ToastContainer />
+      <Toast
+        message='Accommodation added'
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+      />
       <h1 className='mb60'>Add</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormInput
