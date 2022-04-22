@@ -24,3 +24,8 @@ export const amenities = [
     icon: '/icons/fitness.svg',
   },
 ];
+
+export const getAmenityByName = (name) => {
+  const tmp = amenities.filter((item) => item.name === name);
+  return tmp[0];
+};

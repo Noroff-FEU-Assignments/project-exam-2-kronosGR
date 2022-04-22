@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getAccommodationById } from '../BackEnd/getAccommodationById';
@@ -8,9 +8,20 @@ import { AccommodationImage } from '../components/Accommodations/AccommodationIm
 import styles from '../styles/[id].module.css';
 import Image from 'next/image';
 import { SpaceAround } from '../components/Layout/SpaceAround';
+import { Favorite } from '../components/Layout/Favorite';
+import { ShowAmenities } from '../components/ShowAmmenities';
 
 export default function accommodation({ accommodation, error }) {
-  console.log(accommodation);
+  //TODO get if is favorites
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+
+    //TODO update favorites localStorage
+  };
+  console.log(accommodation.amenities);
+
   return (
     <Layout>
       <Spacer size={30} />
@@ -39,17 +50,10 @@ export default function accommodation({ accommodation, error }) {
             />
             <span className={styles.info_text}>{accommodation.bathrooms}</span>
           </div>
-          <div className={styles.info_container}>
-            <Image
-              src='/icons/bath.svg'
-              width={27}
-              height={18}
-              alt='Total bathrooms'
-              className={styles.info}
-            />
-            <span className={styles.info_text}>{accommodation.bathrooms}</span>
-          </div>
+          <Favorite isFavorite={isFavorite} click={handleFavoriteClick} />
         </SpaceAround>
+
+        <ShowAmenities amenities={accommodation.amenities} />
       </div>
       <Error msg='Something went wrong. We apologize' error={error} />
       <Spacer size={60} />
