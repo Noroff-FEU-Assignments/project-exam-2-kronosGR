@@ -14,23 +14,28 @@ import { SpaceBetween } from '../components/Layout/SpaceBetween';
 import Button from '../components/Button';
 import Right from '../components/Layout/Right';
 import { checkIfIsFavorite, toggleFavorites } from '../utils/localStorage';
+import { Rating } from '../components/Rating';
 
 export default function accommodation({ accommodation, error }) {
-  //TODO get if is favorites
-
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
+
+  //TODO add to visits
 
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite);
     toggleFavorites(accommodation.id);
 
-    //TODO update favorites localStorage
+    //TODO add to favorites strapi (increase or decrease depending the status)
   };
+
+  console.log(accommodation);
 
   return (
     <Layout>
       <Spacer size={30} />
       <h1>{accommodation.name}</h1>
+      <Rating votes={accommodation.votes} votesTotal={accommodation.votesTotal} />
+      <Spacer size={10} />
       <div className={styles.container}>
         <AccommodationImage item={accommodation} />
         <p className={styles.description}>{accommodation.description}</p>
