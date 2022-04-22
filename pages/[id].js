@@ -28,13 +28,15 @@ export default function accommodation({ accommodation, error }) {
     //TODO add to favorites strapi (increase or decrease depending the status)
   };
 
-  console.log(accommodation);
-
   return (
     <Layout>
       <Spacer size={30} />
       <h1>{accommodation.name}</h1>
-      <Rating votes={accommodation.votes} votesTotal={accommodation.votesTotal} />
+      <Rating
+        votes={accommodation.votes}
+        votesTotal={parseInt(accommodation.votestotal)}
+        aid={accommodation.id}
+      />
       <Spacer size={10} />
       <div className={styles.container}>
         <AccommodationImage item={accommodation} />

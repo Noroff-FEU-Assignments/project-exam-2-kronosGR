@@ -1,22 +1,41 @@
-import Image from 'next/image';
-import React from 'react';
+import { useRouter } from 'next/router';
+import React, { useState } from 'react';
+import { updateVotes } from '../../BackEnd/updateVote';
 import { EMPTY, FULL, HALF } from '../../constants/StarState';
+import { Error } from '../Error';
 
 import { Star } from './Star';
 
-export const Rating = ({ votes, votesTotal }) => {
+export const Rating = ({ votes, votesTotal, aid }) => {
+  const [error, setError] = useState(null);
+
   const Stars = ({ votes, votesTotal }) => {
+    const router = useRouter();
+
     if (votes === null) votes = 0;
     if (votesTotal === undefined) votesTotal = 0;
 
     let score = parseInt(votesTotal) / parseInt(votes);
 
-    const handleClickStar = (e) => {
-      console.log(e.target.alt);
-      //TODO ADD TO VOTES and refresh the stars
+    const handleClickStar = async (e) => {
+      const vote = parseInt(e.target.alt.replace('star', ''));
+      console.log(vote, +votesTotal);
+      try {
+        const res = await updateVotes(
+          aid,
+          parseInt(votes) + 1,
+          parseInt(votesTotal) + vote
+        );
+        console.log(res.result);
+      } catch (err) {
+        console.log(err);
+        setError(err);
+      } finally {
+        router.reload(window.location.pathname);
+      }
     };
 
-    if (typeof score === 'number') score = 0;
+    if (typeof score !== 'number') score = 0;
 
     const stars = [];
     const tmp = [];
@@ -46,7 +65,11 @@ export const Rating = ({ votes, votesTotal }) => {
 
   return (
     <div>
-      <Stars votes={votes} votesTotal={votesTotal} />
+      <>
+        <Stars votes={votes} votesTotal={votesTotal} />
+
+        <Error msg='Something went wrong. We apologize' error={error} />
+      </>
     </div>
   );
 };
