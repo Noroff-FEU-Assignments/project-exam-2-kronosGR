@@ -25,3 +25,13 @@
 .info_text {
   font-weight: bold;
 }
+
+.price {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.button {
+  margin: 1rem;
+}

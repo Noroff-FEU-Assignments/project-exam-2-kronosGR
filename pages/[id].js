@@ -10,6 +10,9 @@ import Image from 'next/image';
 import { SpaceAround } from '../components/Layout/SpaceAround';
 import { Favorite } from '../components/Layout/Favorite';
 import { ShowAmenities } from '../components/ShowAmmenities';
+import { SpaceBetween } from '../components/Layout/SpaceBetween';
+import Button from '../components/Button';
+import Right from '../components/Layout/Right';
 
 export default function accommodation({ accommodation, error }) {
   //TODO get if is favorites
@@ -54,6 +57,19 @@ export default function accommodation({ accommodation, error }) {
         </SpaceAround>
 
         <ShowAmenities amenities={accommodation.amenities} />
+        <SpaceBetween>
+          <div className={styles.price}>{`$${accommodation.priceday}/Day`}</div>
+          <div className={styles.price}>{`$${accommodation.priceweek}/Week`}</div>
+        </SpaceBetween>
+        <Spacer size={20} />
+        <Right className={styles.button}>
+          <Button
+            width={150}
+            onClick={() => {}}
+            svg='/icons/question-mark.svg'
+            title='Enquire'
+          />
+        </Right>
       </div>
       <Error msg='Something went wrong. We apologize' error={error} />
       <Spacer size={60} />
