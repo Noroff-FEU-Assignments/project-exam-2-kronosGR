@@ -12,6 +12,7 @@ export const ShowAmenities = ({ amenities }) => {
           let amTmp = getAmenityByName(item[0]);
           return (
             <Image
+              className={styles.image}
               src={amTmp.icon}
               alt={amTmp.name}
               width={30}

@@ -13,17 +13,19 @@ import { ShowAmenities } from '../components/ShowAmmenities';
 import { SpaceBetween } from '../components/Layout/SpaceBetween';
 import Button from '../components/Button';
 import Right from '../components/Layout/Right';
+import { checkIfIsFavorite, toggleFavorites } from '../utils/localStorage';
 
 export default function accommodation({ accommodation, error }) {
   //TODO get if is favorites
-  const [isFavorite, setIsFavorite] = useState(false);
+
+  const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
 
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite);
+    toggleFavorites(accommodation.id);
 
     //TODO update favorites localStorage
   };
-  console.log(accommodation.amenities);
 
   return (
     <Layout>
