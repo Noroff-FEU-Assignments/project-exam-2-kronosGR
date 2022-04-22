@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getAccommodationById } from '../BackEnd/getAccommodationById';
@@ -15,11 +15,26 @@ import Button from '../components/Button';
 import Right from '../components/Layout/Right';
 import { checkIfIsFavorite, toggleFavorites } from '../utils/localStorage';
 import { Rating } from '../components/Rating/Rating';
+import { increaseVisits } from '../BackEnd/increaseVisits';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
+  const [errorLocal, setErrorLocal] = useState(false);
 
-  //TODO add to visits
+  useEffect(() => {
+    const update = async () => {
+      try {
+        const res = await increaseVisits(
+          accommodation.id,
+          parseInt(accommodation.visits) + 1
+        );
+      } catch (err) {
+        console.log(err);
+        setErrorLocal(err);
+      }
+    };
+    update();
+  }, []);
 
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite);
@@ -81,6 +96,7 @@ export default function accommodation({ accommodation, error }) {
         </Right>
       </div>
       <Error msg='Something went wrong. We apologize' error={error} />
+      <Error msg='Something went wrong. We apologize' error={errorLocal} />
       <Spacer size={60} />
     </Layout>
   );
