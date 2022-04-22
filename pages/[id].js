@@ -14,7 +14,7 @@ import { SpaceBetween } from '../components/Layout/SpaceBetween';
 import Button from '../components/Button';
 import Right from '../components/Layout/Right';
 import { checkIfIsFavorite, toggleFavorites } from '../utils/localStorage';
-import { Rating } from '../components/Rating';
+import { Rating } from '../components/Rating/Rating';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
