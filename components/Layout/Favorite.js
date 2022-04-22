@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 export const Favorite = ({ isFavorite, click }) => {
+  const style = { cursor: 'pointer' };
   return (
     <div>
       {isFavorite ? (
@@ -11,6 +12,7 @@ export const Favorite = ({ isFavorite, click }) => {
           height={18}
           alt='toggle favorites'
           onClick={click}
+          style={style}
         />
       ) : (
         <Image
@@ -19,6 +21,7 @@ export const Favorite = ({ isFavorite, click }) => {
           height={18}
           alt='toggle favorites'
           onClick={click}
+          style={style}
         />
       )}
     </div>

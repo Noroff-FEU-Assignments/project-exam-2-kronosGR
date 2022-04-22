@@ -16,6 +16,7 @@ import Right from '../components/Layout/Right';
 import { checkIfIsFavorite, toggleFavorites } from '../utils/localStorage';
 import { Rating } from '../components/Rating/Rating';
 import { increaseVisits } from '../BackEnd/increaseVisits';
+import { updateFavorites } from '../BackEnd/updateFavorites';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
@@ -36,11 +37,27 @@ export default function accommodation({ accommodation, error }) {
     update();
   }, []);
 
+  useEffect(() => {
+    const update = async () => {
+      const favorites = isFavorite ? 1 : -1;
+      console.log();
+      try {
+        const res = await updateFavorites(
+          accommodation.id,
+          parseInt(accommodation.favorites) + favorites
+        );
+      } catch (err) {
+        console.log(err);
+        setErrorLocal(err);
+      }
+    };
+
+    update();
+  }, [isFavorite]);
+
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite);
     toggleFavorites(accommodation.id);
-
-    //TODO add to favorites strapi (increase or decrease depending the status)
   };
 
   return (
