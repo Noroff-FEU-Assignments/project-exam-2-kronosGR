@@ -19,19 +19,18 @@ export const Rating = ({ votes, votesTotal, aid }) => {
 
     const handleClickStar = async (e) => {
       const vote = parseInt(e.target.alt.replace('star', ''));
-      console.log(vote, +votesTotal);
       try {
         const res = await updateVotes(
           aid,
           parseInt(votes) + 1,
           parseInt(votesTotal) + vote
         );
-        console.log(res.result);
       } catch (err) {
         console.log(err);
         setError(err);
       } finally {
-        router.reload(window.location.pathname);
+        // router.reload(window.location.pathname);
+        router.push(router.asPath);
       }
     };
 
