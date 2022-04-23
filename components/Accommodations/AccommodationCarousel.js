@@ -9,6 +9,7 @@ export const AccommodationCarousel = ({ item }) => {
   const length = item.images.length;
 
   const handleClick = (e) => {
+    e.preventDefault();
     const type = e.target.dataset.kind;
     if (type === 'next') setActive(active + 1);
     if (type === 'prev') setActive(active - 1);
