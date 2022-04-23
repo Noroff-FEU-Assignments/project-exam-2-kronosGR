@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import styles from '../../AccommodationImage.module.css';
+import styles from '../../styles/AccommodationImage.module.css';
 import { API_URL } from '../../constants/Api';
 
 export const AccommodationImage = ({ item }) => {
