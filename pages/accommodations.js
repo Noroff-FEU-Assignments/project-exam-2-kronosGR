@@ -19,7 +19,7 @@ export default function Accommodations({ accommodations, error }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   const res = await getAccommodations();
   console.log(res.error);
   return {

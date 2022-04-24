@@ -34,7 +34,13 @@ export default function Home() {
             router.push('/most_favorites');
           }}
         />
-        <Promote img='/images/promotion3.jpg' title='Highest Ranked' onClick={() => {}} />
+        <Promote
+          img='/images/promotion3.jpg'
+          title='Highest Ranked'
+          onClick={() => {
+            router.push('/highest_ranked');
+          }}
+        />
       </div>
       <Spacer size={60} />
     </Layout>
