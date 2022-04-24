@@ -1,11 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import { AccommodationsList } from '../components/Accommodations/AccommodationsList';
 import { Error } from '../components/Error';
 import Layout from '../components/Layout/Layout';
 import { SpaceAround } from '../components/Layout/SpaceAround';
 import Spacer from '../components/Layout/Spacer';
-import styles from '../styles/Home.module.css';
 import { getMostFavorites } from '../BackEnd/getMostFavorites';
 
 export default function MostFavorites({ accommodations, error }) {

@@ -24,7 +24,7 @@ export default function Home() {
           img='/images/promotion1.jpg'
           title='Most Popular'
           onClick={() => {
-            console.log('clicked');
+            router.push('/most_popular');
           }}
         />
         <Promote

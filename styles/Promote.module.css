@@ -32,4 +32,5 @@
   background: var(--color-black) 0% 0% no-repeat padding-box;
   opacity: 0.8;
   color: var(--color-white);
+  cursor: pointer;
 }
