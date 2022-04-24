@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import Center from '../components/Layout/Center';
 import Images from '../components/Layout/Images';
 import Layout from '../components/Layout/Layout';
@@ -7,6 +8,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 
 import styles from '../styles/index.module.css';
 export default function Home() {
+  const router = useRouter();
   return (
     <Layout>
       <SearchBar />
@@ -25,7 +27,13 @@ export default function Home() {
             console.log('clicked');
           }}
         />
-        <Promote img='/images/promotion2.jpg' title='Most Favorites' onClick={() => {}} />
+        <Promote
+          img='/images/promotion2.jpg'
+          title='Most Favorites'
+          onClick={() => {
+            router.push('/most_favorites');
+          }}
+        />
         <Promote img='/images/promotion3.jpg' title='Highest Ranked' onClick={() => {}} />
       </div>
       <Spacer size={60} />
