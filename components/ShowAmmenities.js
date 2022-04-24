@@ -15,6 +15,7 @@ export const ShowAmenities = ({ amenities }) => {
               className={styles.image}
               src={amTmp.icon}
               alt={amTmp.name}
+              title={amTmp.name}
               width={30}
               height={30}
               key={amTmp.name}
