@@ -10,7 +10,7 @@ export const updateFavorites = async (aid, favorites) => {
   let ret = { result: '', error: '' };
 
   const body = {
-    favorites,
+    favorites: favorites,
   };
   try {
     const res = await axios.put(API_URL + ACCOMMODATIONS + '/' + aid, body);

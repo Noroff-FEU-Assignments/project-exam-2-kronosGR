@@ -29,7 +29,6 @@ export const Rating = ({ votes, votesTotal, aid }) => {
         console.log(err);
         setError(err);
       } finally {
-        // router.reload(window.location.pathname);
         router.push(router.asPath);
       }
     };

@@ -23,17 +23,16 @@ export const AccommodationCarousel = ({ item }) => {
       <div className={styles.carousel}>
         {item.images.map((item, idx) => {
           return (
-            <>
+            <div key={idx}>
               {active === idx && (
                 <Image
-                  key={idx}
                   className={styles.image}
                   src={API_URL + item.formats.medium.url}
                   layout='fill'
                   alt={item.name}
                 />
               )}
-            </>
+            </div>
           );
         })}
       </div>

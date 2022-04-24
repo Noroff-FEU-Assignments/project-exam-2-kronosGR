@@ -17,10 +17,26 @@ import { Rating } from '../components/Rating/Rating';
 import { increaseVisits } from '../BackEnd/increaseVisits';
 import { updateFavorites } from '../BackEnd/updateFavorites';
 import { AccommodationCarousel } from '../components/Accommodations/AccommodationCarousel';
+import { useRouter } from 'next/router';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
   const [errorLocal, setErrorLocal] = useState(false);
+  const router = useRouter();
+
+  const updateFavorite = async () => {
+    const favorites = isFavorite
+      ? Number(accommodation.favorites) - 1
+      : Number(accommodation.favorites) + 1;
+
+    try {
+      const res = await updateFavorites(accommodation.id, favorites);
+      router.push({ pathname: router.asPath }, undefined, { scroll: false });
+    } catch (err) {
+      console.log(err);
+      setErrorLocal(err);
+    }
+  };
 
   useEffect(() => {
     const update = async () => {
@@ -37,27 +53,11 @@ export default function accommodation({ accommodation, error }) {
     update();
   }, []);
 
-  useEffect(() => {
-    const update = async () => {
-      const favorites = isFavorite ? 1 : -1;
-      console.log();
-      try {
-        const res = await updateFavorites(
-          accommodation.id,
-          parseInt(accommodation.favorites) + favorites
-        );
-      } catch (err) {
-        console.log(err);
-        setErrorLocal(err);
-      }
-    };
-
-    update();
-  }, [isFavorite]);
-
-  const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite);
+  const handleFavoriteClick = (e) => {
+    e.preventDefault();
+    updateFavorite();
     toggleFavorites(accommodation.id);
+    setIsFavorite(!isFavorite);
   };
 
   return (
