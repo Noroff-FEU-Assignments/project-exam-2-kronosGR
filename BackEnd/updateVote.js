@@ -13,6 +13,7 @@ export const updateVotes = async (aid, votes, totalVotes) => {
   const body = {
     votes: votes,
     votestotal: totalVotes,
+    score: Number(totalVotes / votes),
   };
   try {
     const res = await axios.put(API_URL + ACCOMMODATIONS + '/' + aid, body);
