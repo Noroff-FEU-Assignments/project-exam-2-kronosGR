@@ -29,7 +29,7 @@ export const Rating = ({ votes, votesTotal, aid }) => {
         console.log(err);
         setError(err);
       } finally {
-        router.push(router.asPath);
+        router.push({ pathname: router.asPath }, undefined, { scroll: false });
       }
     };
 
