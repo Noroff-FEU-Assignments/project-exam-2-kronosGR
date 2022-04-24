@@ -5,6 +5,7 @@ import { getAccommodations } from '../BackEnd/getAccommodations';
 import { Error } from '../components/Error';
 
 export default function Accommodations({ accommodations, error }) {
+  console.log(accommodations);
   return (
     <Layout>
       <Spacer size={30} />
