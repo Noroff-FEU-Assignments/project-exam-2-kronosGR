@@ -1,21 +1,24 @@
 import axios from 'axios';
-import { API_URL, MESSAGES } from '../constants/Api';
+import { API_URL, ENQUIRIES } from '../constants/Api';
 
 /**
  * send message
  * @param {*} data message data
  */
-export const sendMessage = async (data) => {
+export const sendEnquire = async (data) => {
   let ret = { result: '', error: '' };
 
   const body = {
-    name: data.username,
-    phone: data.phone,
+    fullname: data.fullname,
     message: data.message,
+    phone: data.phone,
     email: data.email,
+    aid: data.aid,
+    from: data.from,
+    to: data.to,
   };
   try {
-    const res = await axios.post(API_URL + MESSAGES, body);
+    const res = await axios.post(API_URL + ENQUIRIES, body);
     console.log(res);
 
     if (res.error) {
