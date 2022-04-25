@@ -106,7 +106,7 @@ export default function Contact() {
       {isLoading && <Loader />}
       {error && (
         <Center>
-          <div className='alert-danger'>There was a problem adding the accommodation</div>
+          <div className='alert-danger'>There was a problem sending the message</div>
         </Center>
       )}
       <Spacer size={40} />

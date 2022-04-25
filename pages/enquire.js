@@ -15,6 +15,10 @@ import Button from '../components/Button';
 import { Colors } from '../constants/Colors';
 import { SpaceBetween } from '../components/Layout/SpaceBetween';
 import SameLine from '../components/Layout/SameLine';
+import { sendEnquire } from '../BackEnd/sendEnquire';
+import Loader from '../components/Loader';
+import Center from '../components/Layout/Center';
+import { toStrapiDate } from '../utils/utils';
 
 const enquireSchema = yup.object().shape({
   fullname: yup.string().required('Please enter your full name'),
@@ -27,8 +31,8 @@ const enquireSchema = yup.object().shape({
     .string()
     .email('Enter a valid email address')
     .required('Please enter your email'),
-  from: yup.date().required('Please select date'),
-  to: yup.date().required('Please select date'),
+  from: yup.date().required('Please select date').typeError('It must be a date'),
+  to: yup.date().required('Please select date').typeError('It must be a date'),
 });
 
 export default function Enquire({ accommodation, error }) {
@@ -45,8 +49,16 @@ export default function Enquire({ accommodation, error }) {
 
   const onSubmit = async (data) => {
     setIsLoading(true);
-    console.log(data);
+    setErrorLocal(null);
+    data.aid = accommodation.id;
+
     try {
+      const res = await sendEnquire(data);
+      data.from = toStrapiDate(data.from);
+      data.to = toStrapiDate(data.to);
+      if (res.error) throw new Error('Error');
+      setIsVisible(true);
+      reset();
       setIsVisible(true);
     } catch (err) {
       console.log(err);
@@ -67,7 +79,6 @@ export default function Enquire({ accommodation, error }) {
           0,
           100
         )}...`}</p>
-
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           <FormInput
             id='fullname'
@@ -92,7 +103,7 @@ export default function Enquire({ accommodation, error }) {
             title='Email'
             type='text'
             placeholder='Enter your email'
-            register={{ ...register('phone') }}
+            register={{ ...register('email') }}
           />
           {errors.email && <span className='alert-danger'>{errors.email.message}</span>}
           <FormTextArea
@@ -112,7 +123,7 @@ export default function Enquire({ accommodation, error }) {
               type='date'
               placeholder='../../..'
               width='90%'
-              register={{ ...register('phone') }}>
+              register={{ ...register('from') }}>
               {errors.from && <span className='alert-danger'>{errors.from.message}</span>}
             </FormInput>
             <FormInput
@@ -121,7 +132,7 @@ export default function Enquire({ accommodation, error }) {
               type='date'
               placeholder='../../..'
               width='90%'
-              register={{ ...register('phone') }}>
+              register={{ ...register('to') }}>
               {errors.to && <span className='alert-danger'>{errors.to.message}</span>}
             </FormInput>
           </SameLine>
@@ -137,6 +148,13 @@ export default function Enquire({ accommodation, error }) {
           />
         </form>
         <Spacer size={60} />
+        {isLoading && <Loader />}
+        {errorLocal && (
+          <Center>
+            <div className='alert-danger'>There was a problem sending the enquire</div>
+          </Center>
+        )}
+        <Spacer size={40} />
       </div>
     </Layout>
   );
