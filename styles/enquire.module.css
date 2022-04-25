@@ -1,0 +1,12 @@
+.container {
+  box-shadow: 6px 6px 6px #00000029;
+  border-radius: 10px;
+  text-align: left;
+  background-color: white;
+  overflow: auto;
+  width: 350px;
+  margin-bottom: 1rem;
+}
+.description {
+  margin: 1rem;
+}
