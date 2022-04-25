@@ -10,6 +10,11 @@ import styles from '../styles/enquire.module.css';
 import { useState } from 'react';
 import { Toast } from '../components/Layout/Toast';
 import FormInput from '../components/Form/FormInput';
+import FormTextArea from '../components/Form/FormTextArea';
+import Button from '../components/Button';
+import { Colors } from '../constants/Colors';
+import { SpaceBetween } from '../components/Layout/SpaceBetween';
+import SameLine from '../components/Layout/SameLine';
 
 const enquireSchema = yup.object().shape({
   fullname: yup.string().required('Please enter your full name'),
@@ -40,6 +45,7 @@ export default function Enquire({ accommodation, error }) {
 
   const onSubmit = async (data) => {
     setIsLoading(true);
+    console.log(data);
     try {
       setIsVisible(true);
     } catch (err) {
@@ -70,7 +76,67 @@ export default function Enquire({ accommodation, error }) {
             placeholder='Enter your full name'
             register={{ ...register('fullname') }}
           />
+          {errors.fullname && (
+            <span className='alert-danger'>{errors.fullname.message}</span>
+          )}
+          <FormInput
+            id='phone'
+            title='Phone number'
+            type='number'
+            placeholder='Enter your full name'
+            register={{ ...register('phone') }}
+          />
+          {errors.phone && <span className='alert-danger'>{errors.phone.message}</span>}
+          <FormInput
+            id='email'
+            title='Email'
+            type='text'
+            placeholder='Enter your email'
+            register={{ ...register('phone') }}
+          />
+          {errors.email && <span className='alert-danger'>{errors.email.message}</span>}
+          <FormTextArea
+            id='message'
+            title='Message'
+            placeholder='Enter your message'
+            rows={10}
+            register={{ ...register('message') }}
+          />
+          {errors.message && (
+            <span className='alert-danger'>{errors.message.message}</span>
+          )}
+          <SameLine>
+            <FormInput
+              id='from'
+              title='Date From'
+              type='date'
+              placeholder='../../..'
+              width='90%'
+              register={{ ...register('phone') }}>
+              {errors.from && <span className='alert-danger'>{errors.from.message}</span>}
+            </FormInput>
+            <FormInput
+              id='to'
+              title='Date to'
+              type='date'
+              placeholder='../../..'
+              width='90%'
+              register={{ ...register('phone') }}>
+              {errors.to && <span className='alert-danger'>{errors.to.message}</span>}
+            </FormInput>
+          </SameLine>
+
+          <Spacer size={30} />
+          <Button
+            svg='/icons/send.svg'
+            type='submit'
+            onClick={() => {}}
+            color={Colors.white}
+            width={150}
+            title='Send'
+          />
         </form>
+        <Spacer size={60} />
       </div>
     </Layout>
   );
