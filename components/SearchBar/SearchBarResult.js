@@ -3,6 +3,9 @@ import { searchAccommodationsByName } from '../../BackEnd/searchAccommodationsBy
 
 import styles from '../../styles/SearchBarResult.module.css';
 import { SearchBarResultItem } from './SearchBarResultItem';
+import accommodation from '../../pages/[id]';
+import Spacer from '../Layout/Spacer';
+import { Error } from '../Error';
 
 export const SearchBarResult = ({ searchFor }) => {
   const [accommodations, setAccommodations] = useState([]);
@@ -10,21 +13,39 @@ export const SearchBarResult = ({ searchFor }) => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
+
     const search = async () => {
       try {
         const res = await searchAccommodationsByName(searchFor);
-        console.log(res.result.length);
         setAccommodations(res.result);
-      } catch (err) {}
+      } catch (err) {
+        console.log(err);
+        setError(err);
+      } finally {
+        setIsLoading(false);
+      }
     };
     search();
   }, [searchFor]);
   return (
-    <div className={styles.container}>
-      {accommodations &&
-        accommodations.map((item, i) => (
-          <SearchBarResultItem key={i} accommodation={item} />
-        ))}
+    <div>
+      {searchFor && (
+        <div className={styles.container}>
+          {accommodations &&
+            accommodations.map((item, i) => (
+              <SearchBarResultItem key={i} accommodation={item} />
+            ))}
+          {accommodations && accommodations.length === 0 && (
+            <div>
+              <Spacer size={100} />
+              <span className={styles.nothing}>No accommodations found</span>
+            </div>
+          )}
+          {isLoading && <span className={styles.loading}>Please wait</span>}
+          <Error msg='Something went wrong. We apologize' error={error} />
+        </div>
+      )}
     </div>
   );
 };
