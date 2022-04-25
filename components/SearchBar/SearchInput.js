@@ -9,11 +9,13 @@ export default function SearchInput({
   type,
   width = '100%',
   align = 'left',
+  onChange,
 }) {
   const [searchFor, setSearchFor] = useState('');
 
   const handleChange = (e) => {
     setSearchFor(e.target.value);
+    onChange(e.target.value);
   };
 
   return (
