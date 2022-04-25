@@ -16,7 +16,6 @@ export const sendMessage = async (data) => {
   };
   try {
     const res = await axios.post(API_URL + MESSAGES, body);
-    console.log(res);
 
     if (res.error) {
       throw new Error('Sorry something went wrong');

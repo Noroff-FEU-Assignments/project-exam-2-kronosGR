@@ -106,7 +106,12 @@ export default function accommodation({ accommodation, error }) {
         <Right className={styles.button}>
           <Button
             width={150}
-            onClick={() => {}}
+            onClick={() => {
+              router.push({
+                pathname: '/enquire',
+                query: { aid: accommodation.id },
+              });
+            }}
             svg='/icons/question-mark.svg'
             title='Enquire'
           />

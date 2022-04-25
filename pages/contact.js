@@ -43,7 +43,6 @@ export default function Contact() {
     setIsLoading(true);
     try {
       const res = await sendMessage(data);
-      console.log(res);
       if (res.error) throw new Error('Error');
       setIsVisible(true);
       reset();
