@@ -13,7 +13,7 @@ export default function SearchBar() {
         width={170}
         svg='/icons/search.svg'
         onClick={() => {
-          // TODO search for accommodations
+          // TODO search for accommodations all results
           console.log('clicked');
         }}
       />
