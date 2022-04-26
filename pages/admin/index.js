@@ -8,28 +8,32 @@ import { Colors } from '../../constants/Colors';
 
 import styles from '../../styles/Admin.module.css';
 import Auth from '../../components/Auth/Auth';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { getTotalUnreadMessages } from '../../BackEnd/getTotalUnreadMessages';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { getTotalUnreadEnquiries } from '../../BackEnd/getTotalUnreadEnquiries';
 import { Error } from '../../components/Error';
+import UserContext from '../../Contexts/UserContext';
 
 export default function Admin() {
   const [totMsg, setTotMsg] = useState(0);
   const [totEnq, setTotEnq] = useState(0);
   const [error, setError] = useState(null);
 
+  const [user, setUser] = useContext(UserContext);
+
   const clickHandler = () => {
     Router.push('/admin/add');
   };
 
   useEffect(() => {
-    const user = loadFromLocalStorage(USER);
+    const userr = loadFromLocalStorage(USER);
+    console.log(user);
 
     const getInfo = async () => {
       try {
-        const msgTotal = await getTotalUnreadMessages(user.jwt);
-        const enqTotal = await getTotalUnreadEnquiries(user.jwt);
+        const msgTotal = await getTotalUnreadMessages(userr.jwt);
+        const enqTotal = await getTotalUnreadEnquiries(userr.jwt);
 
         setTotMsg(msgTotal.result);
         setTotEnq(enqTotal.result);

@@ -10,12 +10,13 @@ import Spacer from '../components/Layout/Spacer';
 import Center from '../components/Layout/Center';
 import Button from '../components/Button';
 import { Colors } from '../constants/Colors';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { API_URL, AUTH } from '../constants/Api';
 
 import styles from '../styles/Login.module.css';
 import Loader from '../components/Loader';
 import { saveToLocalStorage, USER } from '../utils/localStorage';
+import UserContext from '../Contexts/UserContext';
 
 const loginSchema = yup.object().shape({
   email: yup
@@ -28,6 +29,7 @@ const loginSchema = yup.object().shape({
 export default function Login() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [user, setUser] = useContext(UserContext);
 
   const {
     register,
@@ -48,6 +50,7 @@ export default function Login() {
       });
 
       if (res.statusText) {
+        setUser(res.data);
         saveToLocalStorage(USER, res.data);
         Router.push('/admin');
       } else {
