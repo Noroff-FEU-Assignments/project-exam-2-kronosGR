@@ -28,7 +28,6 @@ export default function Admin() {
 
   useEffect(() => {
     const userr = loadFromLocalStorage(USER);
-    console.log(user);
 
     const getInfo = async () => {
       try {

@@ -1,12 +1,36 @@
-import { useEffect } from 'react';
 import Auth from '../../components/Auth/Auth';
 import LayoutAdmin from '../../components/Layout/LayoutAdmin';
 import { MessageList } from '../../components/Messages/MessageList';
 import { getMessages } from '../../BackEnd/getMessages';
 import { Error } from '../../components/Error';
+import { useContext, useEffect, useState } from 'react';
+import UserContext from '../../Contexts/UserContext';
+import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 
-export default function Messages({ messages, error }) {
-  console.log(messages);
+export default function Messages() {
+  const [messages, setMessages] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const user = loadFromLocalStorage(USER);
+    const load = async () => {
+      try {
+        setIsLoading(true);
+        const res = await getMessages(user.jwt);
+        if (res.error) throw new Error('There was a problem');
+        setMessages(res.result);
+      } catch (err) {
+        console.log(err);
+        setError(err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    load();
+  }, [messages]);
+
   return (
     <LayoutAdmin>
       <Auth />
@@ -15,16 +39,4 @@ export default function Messages({ messages, error }) {
       <Error msg='Something went wrong' error={error} />
     </LayoutAdmin>
   );
-}
-
-export async function getServerSideProps() {
-  const res = await getMessages();
-  console.log(res.error);
-
-  return {
-    props: {
-      messages: res.result,
-      error: res.error,
-    },
-  };
 }

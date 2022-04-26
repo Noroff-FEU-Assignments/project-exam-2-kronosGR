@@ -1,11 +1,15 @@
 import axios from 'axios';
 import { API_URL, MESSAGES } from '../constants/Api';
 
-export const getMessages = async () => {
+export const getMessages = async (jwt) => {
   let ret = { result: '', error: '' };
 
   try {
-    const res = await axios.get(API_URL + MESSAGES);
+    const res = await axios.get(API_URL + MESSAGES, {
+      headers: {
+        Authorization: `Bearer ${jwt}`,
+      },
+    });
     if (Array.isArray(res.data)) {
       ret.result = res.data;
     } else {
