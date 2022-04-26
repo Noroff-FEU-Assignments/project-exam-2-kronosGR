@@ -11,6 +11,7 @@ import Auth from '../../components/Auth/Auth';
 import { useEffect, useState } from 'react';
 import { getTotalUnreadMessages } from '../../BackEnd/getTotalUnreadMessages';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
+import { getTotalUnreadEnquiries } from '../../BackEnd/getTotalUnreadEnquiries';
 
 export default function Admin() {
   const [totMsg, setTotMsg] = useState(0);
@@ -25,7 +26,10 @@ export default function Admin() {
 
     const getInfo = async () => {
       const msgTotal = await getTotalUnreadMessages(user.jwt);
+      const enqTotal = await getTotalUnreadEnquiries(user.jwt);
+
       setTotMsg(msgTotal.result);
+      setTotEnq(enqTotal.result);
     };
 
     getInfo();
@@ -39,7 +43,7 @@ export default function Admin() {
         <a className={styles.link}>{`${totMsg} unread Messages`}</a>
       </Link>
       <Link href='/admin/enquires'>
-        <a className={styles.link}>Enquiries</a>
+        <a className={styles.link}>{`${totMsg} unread Enquiries`}</a>
       </Link>
       <Spacer size='60' />
       <Center>
