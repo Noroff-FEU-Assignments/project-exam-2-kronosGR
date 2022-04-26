@@ -48,7 +48,9 @@ export const MessageItem = ({ item }) => {
         <div className={styles.container_extra}>
           <span className={styles.extra}>{item.email}</span>
           <span className={styles.extra}>{item.phone}</span>
-          <span className={styles.extra}>{item.published_at}</span>
+          <span className={styles.extra}>
+            {new Date(item.published_at).toDateString()}
+          </span>
         </div>
       )}
     </div>
