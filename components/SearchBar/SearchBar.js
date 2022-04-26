@@ -26,7 +26,6 @@ export default function SearchBar() {
         width={170}
         svg='/icons/search.svg'
         onClick={() => {
-          // TODO search for accommodations all results
           router.push({ pathname: '/search', query: { searchFor: searchFor } });
         }}
       />

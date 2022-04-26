@@ -3,12 +3,13 @@ import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getAccommodations } from '../BackEnd/getAccommodations';
 import { Error } from '../components/Error';
+import { searchAccommodationsByName } from '../BackEnd/searchAccommodationsByName';
 
-export default function Search({ accommodations, error }) {
+export default function Search({ accommodations, error, searchFor }) {
   return (
     <Layout>
       <Spacer size={30} />
-      <h1>Accommodations</h1>
+      <h1>{`${searchFor}(${accommodations.length})`}</h1>
       {accommodations.length > 0 && (
         <AccommodationsList accommodations={accommodations} />
       )}
@@ -19,10 +20,16 @@ export default function Search({ accommodations, error }) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await getAccommodations();
+export async function getServerSideProps(context) {
+  const searchFor = context.query.searchFor;
+  const res = await searchAccommodationsByName(searchFor);
+  console.log(res.result);
   console.log(res.error);
   return {
-    props: { accommodations: res.result, error: res.error },
+    props: {
+      accommodations: res.result,
+      error: res.error,
+      searchFor,
+    },
   };
 }
