@@ -3,8 +3,7 @@ import LayoutAdmin from '../../components/Layout/LayoutAdmin';
 import { MessageList } from '../../components/Messages/MessageList';
 import { getMessages } from '../../BackEnd/getMessages';
 import { Error } from '../../components/Error';
-import { useContext, useEffect, useState } from 'react';
-import UserContext from '../../Contexts/UserContext';
+import { useEffect, useState } from 'react';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 
 export default function Messages() {

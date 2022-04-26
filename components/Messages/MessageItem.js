@@ -2,10 +2,17 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 import styles from '../../styles/MessageItem.module.css';
+import { updateMessageRead } from '../../BackEnd/updateMessageRead';
+import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 
 export const MessageItem = ({ item }) => {
   const [msg, setMsg] = useState('');
   const [isVisible, setIsVisible] = useState(false);
+
+  const updateRead = async () => {
+    const user = loadFromLocalStorage(USER);
+    const res = await updateMessageRead(user.jwt, item.id);
+  };
 
   useEffect(() => {
     setMsg(item.message.substr(0, 150) + '...');
@@ -19,7 +26,9 @@ export const MessageItem = ({ item }) => {
       setMsg(item.message.substr(0, 150) + '...');
     }
 
-    //TODO on click check if read if not read update to read
+    if (!item.read) {
+      updateRead();
+    }
   };
 
   return (

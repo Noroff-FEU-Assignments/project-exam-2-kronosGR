@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { MessageList } from '../components/Messages/MessageList';
-import { API_URL } from '../constants/Api';
+import { API_URL, MESSAGES } from '../constants/Api';
 
 /**
  * update read for messages
@@ -8,14 +7,14 @@ import { API_URL } from '../constants/Api';
  * @param {*} mid message id
  * @returns {result, error}
  */
-export const updateVotes = async (jwt, mid) => {
+export const updateMessageRead = async (jwt, mid) => {
   let ret = { result: '', error: '' };
 
   const body = {
     read: true,
   };
   try {
-    const res = await axios.put(API_URL + MessageList + `/${mid}`, body, {
+    const res = await axios.put(API_URL + MESSAGES + `/${mid}`, body, {
       headers: {
         Authorization: `Bearer ${jwt}`,
       },
