@@ -8,20 +8,35 @@ import { Colors } from '../../constants/Colors';
 
 import styles from '../../styles/Admin.module.css';
 import Auth from '../../components/Auth/Auth';
-import { Toast } from '../../components/Layout/Toast';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { getTotalUnreadMessages } from '../../BackEnd/getTotalUnreadMessages';
+import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 
 export default function Admin() {
+  const [totMsg, setTotMsg] = useState(0);
+  const [totEnq, setTotEnq] = useState(0);
+
   const clickHandler = () => {
     Router.push('/admin/add');
   };
+
+  useEffect(() => {
+    const user = loadFromLocalStorage(USER);
+
+    const getInfo = async () => {
+      const msgTotal = await getTotalUnreadMessages(user.jwt);
+      setTotMsg(msgTotal.result);
+    };
+
+    getInfo();
+  }, []);
 
   return (
     <LayoutAdmin>
       <Auth />
       <h1 className='mb60'>ADMIN PANEL</h1>
       <Link href='/admin/messages'>
-        <a className={styles.link}>Messages</a>
+        <a className={styles.link}>{`${totMsg} unread Messages`}</a>
       </Link>
       <Link href='/admin/enquires'>
         <a className={styles.link}>Enquiries</a>

@@ -1,11 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from '../../../styles/Nav.module.css';
 import NavigationItem from './NavigationItem';
+import { checkIfLoggedIn } from '../../../utils/localStorage';
 
 export default function Nav() {
+  const [isLoggedIn, setIsLoggedInd] = useState(false);
+  useEffect(() => {
+    setIsLoggedInd(checkIfLoggedIn);
+  }, []);
+
   return (
     <nav className={styles.nav}>
       <Link href='/'>
@@ -50,14 +56,25 @@ export default function Nav() {
           height='19'
           alt='See your favorites'
         />
-        <NavigationItem
-          href='/login'
-          src='/icons/user.svg'
-          title='Login'
-          width='22'
-          height='19'
-          alt='login'
-        />
+        {isLoggedIn && isLoggedIn ? (
+          <NavigationItem
+            href='/admin/'
+            src='/icons/user.svg'
+            title='Admin Panel'
+            width='22'
+            height='19'
+            alt='admin panel'
+          />
+        ) : (
+          <NavigationItem
+            href='/login'
+            src='/icons/user.svg'
+            title='Login'
+            width='22'
+            height='19'
+            alt='login'
+          />
+        )}
       </ul>
     </nav>
   );

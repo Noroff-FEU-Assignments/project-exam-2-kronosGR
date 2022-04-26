@@ -161,7 +161,7 @@ export default function Enquire({ accommodation, error }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await getAccommodationById(context.query.aid);
+  const res = await getAccommodationById(searchFor.query.aid);
   console.log(res.error);
   return {
     props: { accommodation: res.result, error: res.error },
