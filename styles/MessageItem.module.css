@@ -1,12 +1,18 @@
 .container {
   border: 1px solid var(--color-black);
   border-radius: 10px;
-  width: 100%;
+  width: 98%;
   margin: 1rem;
+  background-color: white;
+}
+
+.container:hover {
+  cursor: pointer;
+  background-color: var(--color-white);
 }
 
 .title_container {
-  width: 100%;
+  width: 98%;
   display: flex;
   align-items: center;
   margin: 1rem;
@@ -21,4 +27,15 @@
 .message {
   text-align: left;
   margin: 0.5rem;
+}
+
+.container_extra {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra {
+  font-size: 0.8rem;
+  margin: 0.2rem;
+  color: var(--color-red);
 }
