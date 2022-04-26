@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { API_URL, MESSAGES } from '../constants/Api';
 
+/**
+ * get all messages
+ * @param {*} jwt get all messages
+ * @returns {result, error}
+ */
 export const getMessages = async (jwt) => {
   let ret = { result: '', error: '' };
 

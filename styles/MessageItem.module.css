@@ -4,6 +4,7 @@
   width: 98%;
   margin: 1rem;
   background-color: white;
+  transition: height 2s;
 }
 
 .container:hover {
