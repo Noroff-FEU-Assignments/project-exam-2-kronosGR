@@ -12,10 +12,12 @@ import { useEffect, useState } from 'react';
 import { getTotalUnreadMessages } from '../../BackEnd/getTotalUnreadMessages';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { getTotalUnreadEnquiries } from '../../BackEnd/getTotalUnreadEnquiries';
+import { Error } from '../../components/Error';
 
 export default function Admin() {
   const [totMsg, setTotMsg] = useState(0);
   const [totEnq, setTotEnq] = useState(0);
+  const [error, setError] = useState(null);
 
   const clickHandler = () => {
     Router.push('/admin/add');
@@ -25,11 +27,16 @@ export default function Admin() {
     const user = loadFromLocalStorage(USER);
 
     const getInfo = async () => {
-      const msgTotal = await getTotalUnreadMessages(user.jwt);
-      const enqTotal = await getTotalUnreadEnquiries(user.jwt);
+      try {
+        const msgTotal = await getTotalUnreadMessages(user.jwt);
+        const enqTotal = await getTotalUnreadEnquiries(user.jwt);
 
-      setTotMsg(msgTotal.result);
-      setTotEnq(enqTotal.result);
+        setTotMsg(msgTotal.result);
+        setTotEnq(enqTotal.result);
+      } catch (error) {
+        console.log(error);
+        setError(error);
+      }
     };
 
     getInfo();
@@ -43,8 +50,9 @@ export default function Admin() {
         <a className={styles.link}>{`${totMsg} unread Messages`}</a>
       </Link>
       <Link href='/admin/enquires'>
-        <a className={styles.link}>{`${totMsg} unread Enquiries`}</a>
+        <a className={styles.link}>{`${totEnq} unread Enquiries`}</a>
       </Link>
+      {error && <Error error={error} msg='Something went wrong. Sorry' />}
       <Spacer size='60' />
       <Center>
         <Button
