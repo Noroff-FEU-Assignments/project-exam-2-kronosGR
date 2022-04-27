@@ -136,7 +136,6 @@ Accommodation.propTypes = {
 
 export async function getServerSideProps({ params }) {
   const res = await getAccommodationById(params.id);
-  console.log(res.result.name);
 
   return {
     props: { accommodation: res.result, error: res.error },
