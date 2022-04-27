@@ -28,7 +28,7 @@ export default function Messages() {
     };
 
     load();
-  }, [messages]);
+  }, [33333333]);
 
   return (
     <LayoutAdmin>

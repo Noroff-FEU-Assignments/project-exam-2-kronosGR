@@ -8,6 +8,7 @@ import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 export const MessageItem = ({ item }) => {
   const [msg, setMsg] = useState('');
   const [isVisible, setIsVisible] = useState(false);
+  const [isRead, setIsRead] = useState(item.read);
 
   const updateRead = async () => {
     const user = loadFromLocalStorage(USER);
@@ -15,7 +16,8 @@ export const MessageItem = ({ item }) => {
   };
 
   useEffect(() => {
-    setMsg(item.message.substr(0, 150) + '...');
+    if (item.message.length > 150) setMsg(item.message.substr(0, 150) + '...');
+    else setMsg(item.message);
   }, []);
 
   const clickHandler = () => {
@@ -28,17 +30,18 @@ export const MessageItem = ({ item }) => {
 
     if (!item.read) {
       updateRead();
+      setIsRead(true);
     }
   };
 
   return (
     <div className={styles.container} onClick={clickHandler}>
       <div className={styles.title_container}>
-        {item.read && (
+        {isRead && (
           <Image src='/icons/bell-outline.svg' width={30} height={30} alt={item.name} />
         )}
 
-        {!item.read && (
+        {!isRead && (
           <Image src='/icons/bell.svg' width={30} height={30} alt={item.name} />
         )}
         <span className={styles.name}>{item.name}</span>
