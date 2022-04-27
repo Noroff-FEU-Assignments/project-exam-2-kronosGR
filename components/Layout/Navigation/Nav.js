@@ -8,6 +8,7 @@ import { checkIfLoggedIn } from '../../../utils/localStorage';
 
 export default function Nav() {
   const [isLoggedIn, setIsLoggedInd] = useState(false);
+
   useEffect(() => {
     setIsLoggedInd(checkIfLoggedIn);
   }, []);

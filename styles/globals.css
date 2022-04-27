@@ -77,3 +77,7 @@ a {
   fill: var(--color-black);
   stroke: var(--color-white);
 }
+
+.active {
+  border-bottom: 1px solid var(--color-red);
+}
