@@ -19,6 +19,7 @@ import { updateFavorites } from '../BackEnd/updateFavorites';
 import { AccommodationCarousel } from '../components/Accommodations/AccommodationCarousel';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
@@ -127,6 +128,11 @@ export default function accommodation({ accommodation, error }) {
     </Layout>
   );
 }
+
+accommodation.propTypes = {
+  accommodation: PropTypes.object,
+  error: PropTypes.string,
+};
 
 export async function getServerSideProps({ params }) {
   const res = await getAccommodationById(params.id);
