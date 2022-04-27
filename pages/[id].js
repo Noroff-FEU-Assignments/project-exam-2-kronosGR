@@ -21,7 +21,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 
-export default function accommodation({ accommodation, error }) {
+export default function Accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
   const [errorLocal, setErrorLocal] = useState(false);
   const router = useRouter();
@@ -129,7 +129,7 @@ export default function accommodation({ accommodation, error }) {
   );
 }
 
-accommodation.propTypes = {
+Accommodation.propTypes = {
   accommodation: PropTypes.object,
   error: PropTypes.string,
 };
