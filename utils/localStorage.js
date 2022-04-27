@@ -18,6 +18,12 @@ export const checkIfLoggedIn = () => {
   }
 };
 
+export const removeFromLocalStorage = (key) => {
+  if (typeof window !== 'undefined') {
+    localStorage.removeItem(key);
+  }
+};
+
 export const toggleFavorites = (id) => {
   const favorites = loadFromLocalStorage(FAVORITES) || {};
   const enabled = favorites[id] || false;

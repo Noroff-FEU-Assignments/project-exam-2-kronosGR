@@ -1,6 +1,17 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Router from 'next/router';
+import { useEffect } from 'react';
+import Loader from '../../components/Loader';
+import { removeFromLocalStorage, USER } from '../../utils/localStorage';
 
 export default function Logout() {
-  return <div>Logout</div>;
+  useEffect(() => {
+    removeFromLocalStorage(USER);
+    Router.push('/');
+  });
+
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 }
