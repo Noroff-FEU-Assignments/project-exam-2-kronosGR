@@ -4,10 +4,14 @@ import Spacer from '../components/Layout/Spacer';
 import { getAccommodations } from '../BackEnd/getAccommodations';
 import { Error } from '../components/Error';
 import { searchAccommodationsByName } from '../BackEnd/searchAccommodationsByName';
+import Head from 'next/head';
 
 export default function Search({ accommodations, error, searchFor }) {
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Search for {searchFor}</title>
+      </Head>
       <Spacer size={30} />
       <h1>{`${searchFor}(${accommodations.length})`}</h1>
       {accommodations.length > 0 && (

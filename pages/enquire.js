@@ -19,6 +19,7 @@ import { sendEnquire } from '../BackEnd/sendEnquire';
 import Loader from '../components/Loader';
 import Center from '../components/Layout/Center';
 import { toStrapiDate } from '../utils/utils';
+import Head from 'next/head';
 
 const enquireSchema = yup.object().shape({
   fullname: yup.string().required('Please enter your full name'),
@@ -70,6 +71,9 @@ export default function Enquire({ accommodation, error }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Enquire</title>
+      </Head>
       <Toast message='Enquire sent' isVisible={isVisible} setIsVisible={setIsVisible} />
       <Spacer size={30} />
       <h1>{accommodation.name}</h1>
@@ -161,7 +165,7 @@ export default function Enquire({ accommodation, error }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await getAccommodationById(searchFor.query.aid);
+  const res = await getAccommodationById(context.query.aid);
   console.log(res.error);
   return {
     props: { accommodation: res.result, error: res.error },

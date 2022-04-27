@@ -6,6 +6,7 @@ import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { getEnquiries } from '../../BackEnd/getEnquiries';
 import { EnquireList } from '../../components/Enquiries/EnquireList';
 import Router from 'next/router';
+import Head from 'next/head';
 
 export default function Enquiries() {
   const [enquiries, setEnquiries] = useState(null);
@@ -33,6 +34,9 @@ export default function Enquiries() {
 
   return (
     <LayoutAdmin>
+      <Head>
+        <title>Holidaze | Enquiries</title>
+      </Head>
       <Auth />
       <h1 className='mb60'>Enquiries</h1>
       <EnquireList enquiries={enquiries} />

@@ -3,10 +3,14 @@ import { Error } from '../components/Error';
 import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getHighestRanked } from '../BackEnd/getHighestRanked';
+import Head from 'next/head';
 
 export default function HighestRanked({ accommodations, error }) {
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Highest Ranked</title>
+      </Head>
       <Spacer size={30} />
       <h1>Highest Ranked</h1>
       {accommodations.length > 0 && (

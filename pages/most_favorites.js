@@ -4,10 +4,14 @@ import Layout from '../components/Layout/Layout';
 import { SpaceAround } from '../components/Layout/SpaceAround';
 import Spacer from '../components/Layout/Spacer';
 import { getMostFavorites } from '../BackEnd/getMostFavorites';
+import Head from 'next/head';
 
 export default function MostFavorites({ accommodations, error }) {
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Most Favorites</title>
+      </Head>
       <SpaceAround size={30} />
       <h1>Most Favorites</h1>
       {accommodations.length > 0 && (

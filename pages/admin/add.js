@@ -18,6 +18,7 @@ import FormAmenities from '../../components/Form/FormAmenities';
 import axios from 'axios';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { Toast } from '../../components/Layout/Toast';
+import Head from 'next/head';
 
 const addSchema = yup.object().shape({
   accname: yup.string().required('Please enter a name'),
@@ -143,6 +144,9 @@ export default function Admin() {
 
   return (
     <LayoutAdmin>
+      <Head>
+        <title>Holidaze | Add Accommodation </title>
+      </Head>
       <Toast
         message='Accommodation added'
         isVisible={isVisible}

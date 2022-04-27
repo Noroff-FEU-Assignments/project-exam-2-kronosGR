@@ -6,6 +6,7 @@ import Spacer from '../components/Layout/Spacer';
 import { FAVORITES, loadFromLocalStorage } from '../utils/localStorage';
 import { getAccommodationById } from '../BackEnd/getAccommodationById';
 import Loader from '../components/Loader';
+import Head from 'next/head';
 
 export default function Favorites() {
   const [accommodations, setAccommodations] = useState(null);
@@ -41,6 +42,9 @@ export default function Favorites() {
   }, []);
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Your favorites </title>
+      </Head>
       {isLoading && <Loader />}
       <Spacer size={30} />
       <h1>Your favorite</h1>

@@ -3,10 +3,14 @@ import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
 import { getAccommodations } from '../BackEnd/getAccommodations';
 import { Error } from '../components/Error';
+import Head from 'next/head';
 
 export default function Accommodations({ accommodations, error }) {
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Accommodations</title>
+      </Head>
       <Spacer size={30} />
       <h1>Accommodations</h1>
       {accommodations.length > 0 && (

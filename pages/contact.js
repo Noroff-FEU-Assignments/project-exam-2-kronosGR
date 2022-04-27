@@ -13,6 +13,7 @@ import Button from '../components/Button';
 import Loader from '../components/Loader';
 import Center from '../components/Layout/Center';
 import { sendMessage } from '../BackEnd/sendMessage';
+import Head from 'next/head';
 
 const contactSchema = yup.object().shape({
   username: yup.string().required('Please enter your name'),
@@ -56,6 +57,9 @@ export default function Contact() {
 
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Contact Us</title>
+      </Head>
       <Toast message='Message sent' isVisible={isVisible} setIsVisible={setIsVisible} />
       <h1 className='mb60'>Contact US</h1>
       <form onSubmit={handleSubmit(onSubmit)} style={{ width: '80%' }}>

@@ -1,5 +1,5 @@
+import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Center from '../components/Layout/Center';
 import Images from '../components/Layout/Images';
 import Layout from '../components/Layout/Layout';
 import Spacer from '../components/Layout/Spacer';
@@ -7,10 +7,15 @@ import Promote from '../components/Promote/Promote';
 import SearchBar from '../components/SearchBar/SearchBar';
 
 import styles from '../styles/index.module.css';
+
+Home.title = 'Holidaze';
 export default function Home() {
   const router = useRouter();
   return (
     <Layout>
+      <Head>
+        <meta name='description' content='Explore Bergen. Best Prices' />
+      </Head>
       <SearchBar />
       <Spacer size={30} />
       <h1>Explore Bergen</h1>

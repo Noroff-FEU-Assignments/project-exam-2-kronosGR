@@ -14,6 +14,7 @@ import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { getTotalUnreadEnquiries } from '../../BackEnd/getTotalUnreadEnquiries';
 import { Error } from '../../components/Error';
 import UserContext from '../../Contexts/UserContext';
+import Head from 'next/head';
 
 export default function Admin() {
   const [totMsg, setTotMsg] = useState(0);
@@ -47,6 +48,9 @@ export default function Admin() {
 
   return (
     <LayoutAdmin>
+      <Head>
+        <title>Holidaze | Admin Panel </title>
+      </Head>
       <Auth />
       <h1 className='mb60'>ADMIN PANEL</h1>
       <Link href='/admin/messages'>

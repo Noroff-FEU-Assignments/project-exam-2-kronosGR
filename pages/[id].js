@@ -18,6 +18,7 @@ import { increaseVisits } from '../BackEnd/increaseVisits';
 import { updateFavorites } from '../BackEnd/updateFavorites';
 import { AccommodationCarousel } from '../components/Accommodations/AccommodationCarousel';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function accommodation({ accommodation, error }) {
   const [isFavorite, setIsFavorite] = useState(checkIfIsFavorite(accommodation.id));
@@ -62,6 +63,9 @@ export default function accommodation({ accommodation, error }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | {accommodation.name}</title>
+      </Head>
       <Spacer size={30} />
       <h1>{accommodation.name}</h1>
       <Rating
@@ -126,6 +130,7 @@ export default function accommodation({ accommodation, error }) {
 
 export async function getServerSideProps({ params }) {
   const res = await getAccommodationById(params.id);
+  console.log(res.result.name);
 
   return {
     props: { accommodation: res.result, error: res.error },

@@ -17,6 +17,7 @@ import styles from '../styles/Login.module.css';
 import Loader from '../components/Loader';
 import { saveToLocalStorage, USER } from '../utils/localStorage';
 import UserContext from '../Contexts/UserContext';
+import Head from 'next/head';
 
 const loginSchema = yup.object().shape({
   email: yup
@@ -66,6 +67,9 @@ export default function Login() {
 
   return (
     <Layout>
+      <Head>
+        <title>Holidaze | Login</title>
+      </Head>
       <h1 className='mb60'>Login</h1>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <FormInput

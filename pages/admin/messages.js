@@ -5,6 +5,7 @@ import { getMessages } from '../../BackEnd/getMessages';
 import { Error } from '../../components/Error';
 import { useEffect, useState } from 'react';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
+import Head from 'next/head';
 
 export default function Messages() {
   const [messages, setMessages] = useState(null);
@@ -32,6 +33,9 @@ export default function Messages() {
 
   return (
     <LayoutAdmin>
+      <Head>
+        <title>Holidaze | Messages</title>
+      </Head>
       <Auth />
       <h1 className='mb60'>Messages</h1>
       <MessageList messages={messages} />
