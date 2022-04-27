@@ -7,7 +7,7 @@ import { API_URL, ENQUIRIES } from '../constants/Api';
  * @param {*} eid enquire id
  * @returns {result, error}
  */
-export const updateEnquireRead = async (jwt, mid) => {
+export const updateEnquireRead = async (jwt, eid) => {
   let ret = { result: '', error: '' };
 
   const body = {

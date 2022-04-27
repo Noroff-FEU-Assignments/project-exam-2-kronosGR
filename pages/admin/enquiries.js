@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { getEnquiries } from '../../BackEnd/getEnquiries';
 import { EnquireList } from '../../components/Enquiries/EnquireList';
+import Router from 'next/router';
 
 export default function Enquiries() {
   const [enquiries, setEnquiries] = useState(null);
@@ -28,7 +29,7 @@ export default function Enquiries() {
     };
 
     load();
-  }, [enquiries]);
+  }, []);
 
   return (
     <LayoutAdmin>

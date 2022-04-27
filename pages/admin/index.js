@@ -52,7 +52,7 @@ export default function Admin() {
       <Link href='/admin/messages'>
         <a className={styles.link}>{`${totMsg} unread Messages`}</a>
       </Link>
-      <Link href='/admin/enquires'>
+      <Link href='/admin/enquiries'>
         <a className={styles.link}>{`${totEnq} unread Enquiries`}</a>
       </Link>
       {error && <Error error={error} msg='Something went wrong. Sorry' />}
