@@ -2,8 +2,8 @@ import axios from 'axios';
 import { API_URL, ENQUIRIES } from '../constants/Api';
 
 /**
- * send message
- * @param {*} data message data
+ * send enquire
+ * @param {*} data enquire data
  */
 export const sendEnquire = async (data) => {
   let ret = { result: '', error: '' };

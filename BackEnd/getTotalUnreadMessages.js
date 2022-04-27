@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { API_URL, MESSAGES } from '../constants/Api';
 
+/**
+ * get total unread messages
+ * @param {*} jwt of the use authentication
+ * @returns {result,error}
+ */
 export const getTotalUnreadMessages = async (jwt) => {
   let ret = { result: '', error: '' };
   try {

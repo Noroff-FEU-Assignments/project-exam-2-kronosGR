@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { API_URL, ENQUIRIES } from '../constants/Api';
 
+/**
+ * get total unread enquiries
+ * @param {*} jwt of the user authentication
+ * @returns {result,error}
+ */
 export const getTotalUnreadEnquiries = async (jwt) => {
   let ret = { result: '', error: '' };
   try {

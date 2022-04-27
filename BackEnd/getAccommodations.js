@@ -1,6 +1,10 @@
 import axios from 'axios';
 import { ACCOMMODATIONS, API_URL } from '../constants/Api';
 
+/**
+ * Get all accommodations
+ * @returns {result,error}
+ */
 export const getAccommodations = async () => {
   let ret = { result: '', error: '' };
 

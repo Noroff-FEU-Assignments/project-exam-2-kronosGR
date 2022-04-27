@@ -1,6 +1,10 @@
 import axios from 'axios';
 import { ACCOMMODATIONS, API_URL } from '../constants/Api';
 
+/**
+ * get the most favorite accommodations
+ * @returns {result,error}
+ */
 export const getMostFavorites = async () => {
   let ret = { result: '', error: '' };
 

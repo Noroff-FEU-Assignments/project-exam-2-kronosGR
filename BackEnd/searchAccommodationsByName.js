@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { ACCOMMODATIONS, API_URL } from '../constants/Api';
 
+/**
+ * search the accommodations by name
+ * @param {*} name to search
+ * @returns {result,error}
+ */
 export const searchAccommodationsByName = async (name) => {
   let ret = { result: '', error: '' };
 

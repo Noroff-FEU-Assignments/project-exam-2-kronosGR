@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { ACCOMMODATIONS, API_URL } from '../constants/Api';
 
+/**
+ * Get an accommodation by ID
+ * @param {*} id of the accommodation
+ * @returns {result,error}
+ */
 export const getAccommodationById = async (id) => {
   let ret = { result: '', error: '' };
 
