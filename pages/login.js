@@ -44,31 +44,20 @@ export default function Login() {
     setIsLoading(true);
     setError(null);
 
-    const datal = {
-      identifier: data.email,
-      password: data.password,
-    };
-
     try {
-      // const res = await axios.post(
-      //   API_URL + AUTH,
-      //   {
-      //     identifier: data.email,
-      //     password: data.password,
-      //   },
-      //   {
-      //     // mode: 'no-cors',
-      //     headers: {
-      //       'Access-Control-Allow-Origin': '*',
-      //       'Content-Type': 'application/json',
-      //       // Origin: 'http://localhost:3000',
-      //     },
-      //   }
-      // );
-      const res = await fetch(API_URL + AUTH, {
-        method: 'POST',
-        body: JSON.stringify(datal),
-      });
+      const res = await axios.post(
+        API_URL + AUTH,
+        {
+          identifier: data.email,
+          password: data.password,
+        },
+        {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
       if (res.data.jwt) {
         setUser(res.data);
@@ -111,7 +100,7 @@ export default function Login() {
         {errors.password && (
           <span className='alert-danger'>{errors.password.message}</span>
         )}
-        <Spacer size='60' />
+        <Spacer size='60' color={Colors.white} />
         <Center>
           <Button
             svg='/icons/send.svg'
