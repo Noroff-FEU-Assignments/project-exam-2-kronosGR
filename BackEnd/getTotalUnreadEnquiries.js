@@ -18,8 +18,9 @@ export const getTotalUnreadEnquiries = async (jwt) => {
     if (res.error) {
       throw new Error('Sorry something went wrong');
     }
-    ret.result = res.data.length;
+    ret.result = res.data.length || 0;
   } catch (err) {
+    console.log(err);
     ret.error = err.stack;
   }
 
