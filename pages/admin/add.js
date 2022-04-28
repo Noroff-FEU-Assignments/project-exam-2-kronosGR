@@ -93,15 +93,19 @@ export default function Admin() {
     setError(null);
 
     const dataToSend = {
-      name: data.accname,
-      description: data.description,
-      address: data.address,
-      bedrooms: data.bedrooms,
-      bathrooms: data.bathrooms,
-      priceday: data.priceDay,
-      priceweek: data.priceWeek,
-      amenities: JSON.stringify(amenitiesList),
+      data: {
+        name: data.accname,
+        description: data.description,
+        address: data.address,
+        bedrooms: data.bedrooms,
+        bathrooms: data.bathrooms,
+        priceday: data.priceDay,
+        priceweek: data.priceWeek,
+        amenities: JSON.stringify(amenitiesList),
+      },
     };
+
+    console.log(dataToSend);
 
     const user = loadFromLocalStorage(USER);
 
@@ -124,6 +128,8 @@ export default function Admin() {
       formData.append('ref', 'accomondations');
       formData.append('refId', id);
       formData.append('field', 'images');
+
+      console.log(formData.values);
 
       const resI = await axios.post(API_URL + 'upload', formData, {
         headers: {
