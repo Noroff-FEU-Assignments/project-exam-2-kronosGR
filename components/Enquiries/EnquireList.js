@@ -7,6 +7,7 @@ export const EnquireList = ({ enquiries, onReload }) => {
   return (
     <div className={styles.container}>
       {enquiries && enquiries.map((item, i) => <EnquireItem item={item} key={i} />)}
+      {enquiries && enquiries.length === 0 && <span>No enquiries</span>}
     </div>
   );
 };

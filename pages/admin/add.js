@@ -255,7 +255,7 @@ export default function Admin() {
         />
         {errors.images && <span className='alert-danger'>{errors.images.message}</span>}
 
-        <Spacer size={50} />
+        <Spacer size={50} color={Colors.white} />
         <Button
           svg='/icons/add.svg'
           type='submit'

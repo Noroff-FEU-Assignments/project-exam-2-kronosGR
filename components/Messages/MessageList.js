@@ -7,6 +7,7 @@ export const MessageList = ({ messages }) => {
   return (
     <div className={styles.container}>
       {messages && messages.map((item, i) => <MessageItem item={item} key={i} />)}
+      {messages && messages.length === 0 && <span>No messages</span>}
     </div>
   );
 };
