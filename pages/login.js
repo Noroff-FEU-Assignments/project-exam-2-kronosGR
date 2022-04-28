@@ -50,7 +50,7 @@ export default function Login() {
         password: data.password,
       });
 
-      if (res.statusText) {
+      if (res.data.jwt) {
         setUser(res.data);
         saveToLocalStorage(USER, res.data);
         Router.push('/admin');
