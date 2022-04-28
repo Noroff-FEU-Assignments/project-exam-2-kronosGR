@@ -93,16 +93,14 @@ export default function Admin() {
     setError(null);
 
     const dataToSend = {
-      data: {
-        name: data.accname,
-        description: data.description,
-        address: data.address,
-        bedrooms: data.bedrooms,
-        bathrooms: data.bathrooms,
-        priceday: data.priceDay,
-        priceweek: data.priceWeek,
-        amenities: JSON.stringify(amenitiesList),
-      },
+      name: data.accname,
+      description: data.description,
+      address: data.address,
+      bedrooms: data.bedrooms,
+      bathrooms: data.bathrooms,
+      priceday: data.priceDay,
+      priceweek: data.priceWeek,
+      amenities: JSON.stringify(amenitiesList),
     };
 
     console.log(dataToSend);
@@ -116,7 +114,7 @@ export default function Admin() {
           Authorization: `Bearer ${user.jwt}`,
         },
       });
-
+      console.log(res);
       id = res.data.id;
 
       const formData = new FormData();
@@ -125,7 +123,7 @@ export default function Admin() {
         formData.append('files', data.images.item(i), data.images.item(i).name);
       }
 
-      formData.append('ref', 'accomondations');
+      formData.append('ref', 'accommodations');
       formData.append('refId', id);
       formData.append('field', 'images');
 

@@ -45,19 +45,10 @@ export default function Login() {
     setError(null);
 
     try {
-      const res = await axios.post(
-        API_URL + AUTH,
-        {
-          identifier: data.email,
-          password: data.password,
-        },
-        {
-          headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+      const res = await axios.post(API_URL + AUTH, {
+        identifier: data.email,
+        password: data.password,
+      });
 
       if (res.data.jwt) {
         setUser(res.data);
