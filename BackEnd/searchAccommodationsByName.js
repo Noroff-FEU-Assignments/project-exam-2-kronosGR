@@ -11,6 +11,7 @@ export const searchAccommodationsByName = async (name) => {
 
   try {
     const res = await axios.get(API_URL + ACCOMMODATIONS + '?name_contains=' + name);
+    console.log(res);
 
     if (res.error) {
       throw new Error('Sorry something went wrong');

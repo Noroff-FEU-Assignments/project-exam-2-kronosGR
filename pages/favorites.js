@@ -52,7 +52,7 @@ export default function Favorites() {
         <AccommodationsList accommodations={accommodations} />
       )}
       {accommodations && accommodations.length === 0 && (
-        <div>The is no accommodation in your favorites</div>
+        <div>There are no accommodations in your favorites</div>
       )}
       <Error msg='Something went wrong. We apologize' error={error} />
 

@@ -3,7 +3,8 @@
   top: 500px;
   width: 356px;
   height: 300px;
-  left: 33px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   background-color: white;
   border: 1px solid var(--color-black);

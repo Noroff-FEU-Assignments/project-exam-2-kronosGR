@@ -3,14 +3,13 @@ import { searchAccommodationsByName } from '../../BackEnd/searchAccommodationsBy
 
 import styles from '../../styles/SearchBarResult.module.css';
 import { SearchBarResultItem } from './SearchBarResultItem';
-import accommodation from '../../pages/[id]';
 import Spacer from '../Layout/Spacer';
 import { Error } from '../Error';
 
 export const SearchBarResult = ({ searchFor }) => {
   const [accommodations, setAccommodations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setIsLoading(true);
