@@ -14,9 +14,11 @@ export default function Layout({ children }) {
           <Nav />
         </Hero>
       </header>
-      <main className={styles.layout}>{children}</main>
-      <Spacer size='4rem' />
-      <Footer />
+      <div className={styles.wrapper}>
+        <main className={styles.layout}>{children}</main>
+        <Spacer size='4rem' />
+        <Footer />
+      </div>
     </>
   );
 }
