@@ -103,8 +103,6 @@ export default function Admin() {
       amenities: JSON.stringify(amenitiesList),
     };
 
-    console.log(dataToSend);
-
     const user = loadFromLocalStorage(USER);
 
     let id = 0;
@@ -114,7 +112,7 @@ export default function Admin() {
           Authorization: `Bearer ${user.jwt}`,
         },
       });
-      console.log(res);
+
       id = res.data.id;
 
       const formData = new FormData();
@@ -127,9 +125,7 @@ export default function Admin() {
       formData.append('refId', id);
       formData.append('field', 'images');
 
-      console.log(formData.values);
-
-      const resI = await axios.post(API_URL + 'upload', formData, {
+      const resI = await axios.post(API_URL + '/upload', formData, {
         headers: {
           Authorization: `Bearer ${user.jwt}`,
         },
