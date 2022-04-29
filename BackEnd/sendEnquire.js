@@ -19,7 +19,6 @@ export const sendEnquire = async (data) => {
   };
   try {
     const res = await axios.post(API_URL + ENQUIRIES, body);
-    console.log(res);
 
     if (res.error) {
       throw new Error('Sorry something went wrong');

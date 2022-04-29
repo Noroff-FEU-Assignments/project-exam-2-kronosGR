@@ -98,7 +98,7 @@ export default function Enquire({ accommodation, error }) {
             id='phone'
             title='Phone number'
             type='number'
-            placeholder='Enter your full name'
+            placeholder='Enter your phone number'
             register={{ ...register('phone') }}
           />
           {errors.phone && <span className='alert-danger'>{errors.phone.message}</span>}
