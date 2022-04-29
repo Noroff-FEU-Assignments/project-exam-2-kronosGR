@@ -34,3 +34,10 @@
   color: var(--color-white);
   cursor: pointer;
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 510px;
+    height: 480px;
+  }
+}

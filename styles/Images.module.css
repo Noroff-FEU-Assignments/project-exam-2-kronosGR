@@ -20,3 +20,17 @@
   opacity: 0.8;
   cursor: zoom-in;
 }
+
+@media screen and (min-width: 922px) {
+  .image_container {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image_container {
+    width: 450px;
+    height: 300px;
+  }
+}
