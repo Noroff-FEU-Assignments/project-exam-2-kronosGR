@@ -34,3 +34,18 @@
   font-size: 3rem;
   color: var(--color-black);
 }
+
+@media screen and (min-width: 922px) {
+  .hamb_icon {
+    display: none;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    display: flex;
+    position: static;
+    transform: none;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}

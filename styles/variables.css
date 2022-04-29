@@ -16,4 +16,10 @@
 
   --font-heading: alkaline, sans-serif;
   --font-body: nunito-sans, sans-serif;
+
+  /* 
+  --media-sm: 600px;
+  --media-md: 768px;
+  --media-lg: 992px;
+  --media-xl: 1200px; */
 }
