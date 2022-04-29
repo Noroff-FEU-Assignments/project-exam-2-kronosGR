@@ -160,6 +160,7 @@ export default function Enquire({ accommodation, error }) {
         )}
         <Spacer size={40} />
       </div>
+      <Spacer size={40} color={Colors.white} />
     </Layout>
   );
 }
