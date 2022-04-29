@@ -97,7 +97,7 @@ export default function Contact() {
           register={{ ...register('message') }}
         />
         {errors.message && <span className='alert-danger'>{errors.message.message}</span>}
-        <Spacer size={30} />
+        <Spacer size={30} color={Colors.white} />
         <Button
           svg='/icons/send.svg'
           type='submit'
