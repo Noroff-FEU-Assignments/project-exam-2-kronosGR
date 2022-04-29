@@ -35,3 +35,15 @@
 .button {
   margin: 1rem;
 }
+
+@media screen and (min-width: 922px) {
+  .container {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}

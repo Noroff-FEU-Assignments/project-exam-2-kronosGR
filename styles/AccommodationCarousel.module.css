@@ -31,3 +31,15 @@
 .next {
   margin: 1rem;
 }
+
+@media screen and (min-width: 922px) {
+  .image_container {
+    height: 330px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image_container {
+    height: 500px;
+  }
+}
