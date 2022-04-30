@@ -5,6 +5,7 @@ import styles from '../../styles/LayoutAdmin.module.css';
 import Footer from './Footer/Footer';
 import Spacer from './Spacer';
 import Nav from './Navigation/Nav';
+import { PropTypes } from 'prop-types';
 
 export default function Layout({ children }) {
   return (
@@ -16,9 +17,13 @@ export default function Layout({ children }) {
       </header>
       <div className={styles.wrapper}>
         <main className={styles.layout}>{children}</main>
-        <Spacer size='4rem' />
+        <Spacer size={64} />
         <Footer />
       </div>
     </>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node,
+};

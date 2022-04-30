@@ -80,7 +80,7 @@ export default function Login() {
           register={{ ...register('email') }}
         />
         {errors.email && <span className='alert-danger'>{errors.email.message}</span>}
-        <Spacer size='30px' />
+        <Spacer size={30} />
         <FormInput
           title='Password'
           placeholder='Enter your password'

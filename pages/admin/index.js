@@ -60,7 +60,7 @@ export default function Admin() {
         <a className={styles.link}>{`${totEnq} unread Enquiries`}</a>
       </Link>
       {error && <Error error={error} msg='Something went wrong. Sorry' />}
-      <Spacer size='60' />
+      <Spacer size={60} />
       <Center>
         <Button
           onClick={clickHandler}
@@ -70,7 +70,7 @@ export default function Admin() {
           svg='/icons/add.svg'
         />
       </Center>
-      <Spacer size='60' />
+      <Spacer size={60} />
     </LayoutAdmin>
   );
 }

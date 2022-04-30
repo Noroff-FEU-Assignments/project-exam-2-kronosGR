@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export default function Right({ children, className }) {
   return (
@@ -7,3 +8,8 @@ export default function Right({ children, className }) {
     </div>
   );
 }
+
+Right.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
