@@ -1,0 +1,3039 @@
+[{
+    id: 11,
+    name: "Blue Sky",
+    published_at: "2022-04-29T06:52:36.000Z",
+    created_at: "2022-04-29T06:52:36.000Z",
+    updated_at: "2022-04-30T05:53:44.000Z",
+    description: "Stay well in our newly renovated and charming apartment building in the middle of nowhere on St Hanshaugen itself, in our fully equipped studio apartments with a very good standard. Cozy living room with a bed, dining table and fully equipped kitchen. ",
+    address: "Rasmus Meyers allé, 5015 Bergen",
+    bedrooms: 2,
+    bathrooms: 2,
+    priceday: 100,
+    priceweek: 500,
+    amenities: "{"
+    WI - FI ":false,"
+    Swimming Pool ":false,"
+    Child Friendly ":true,"
+    Accessible ":false,"
+    Washing Machine ":true,"
+    Fitness ":false}",
+    votes: 2,
+    votestotal: 7,
+    visits: 15,
+    favorites: 2,
+    score: 3.5,
+    images: [{
+        id: 12,
+        name: "accommodation34.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation34.jpg",
+            hash: "thumbnail_accommodation34_03a08d10dd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.36,
+            path: null,
+            url: "/uploads/thumbnail_accommodation34_03a08d10dd.jpg"
+          },
+          large: {
+            name: "large_accommodation34.jpg",
+            hash: "large_accommodation34_03a08d10dd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 90.65,
+            path: null,
+            url: "/uploads/large_accommodation34_03a08d10dd.jpg"
+          },
+          medium: {
+            name: "medium_accommodation34.jpg",
+            hash: "medium_accommodation34_03a08d10dd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 55.38,
+            path: null,
+            url: "/uploads/medium_accommodation34_03a08d10dd.jpg"
+          },
+          small: {
+            name: "small_accommodation34.jpg",
+            hash: "small_accommodation34_03a08d10dd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 28.9,
+            path: null,
+            url: "/uploads/small_accommodation34_03a08d10dd.jpg"
+          }
+        },
+        hash: "accommodation34_03a08d10dd",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 234.12,
+        url: "/uploads/accommodation34_03a08d10dd.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:52:36.000Z",
+        updated_at: "2022-04-29T06:52:36.000Z"
+      },
+      {
+        id: 13,
+        name: "accommodation32.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1920,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation32.jpg",
+            hash: "thumbnail_accommodation32_e2cea51158",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 156,
+            height: 156,
+            size: 6.54,
+            path: null,
+            url: "/uploads/thumbnail_accommodation32_e2cea51158.jpg"
+          },
+          large: {
+            name: "large_accommodation32.jpg",
+            hash: "large_accommodation32_e2cea51158",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 1000,
+            size: 170.58,
+            path: null,
+            url: "/uploads/large_accommodation32_e2cea51158.jpg"
+          },
+          medium: {
+            name: "medium_accommodation32.jpg",
+            hash: "medium_accommodation32_e2cea51158",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 750,
+            size: 96.88,
+            path: null,
+            url: "/uploads/medium_accommodation32_e2cea51158.jpg"
+          },
+          small: {
+            name: "small_accommodation32.jpg",
+            hash: "small_accommodation32_e2cea51158",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 500,
+            size: 47.23,
+            path: null,
+            url: "/uploads/small_accommodation32_e2cea51158.jpg"
+          }
+        },
+        hash: "accommodation32_e2cea51158",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 487.57,
+        url: "/uploads/accommodation32_e2cea51158.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:52:37.000Z",
+        updated_at: "2022-04-29T06:52:37.000Z"
+      },
+      {
+        id: 14,
+        name: "accommodation35.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation35.jpg",
+            hash: "thumbnail_accommodation35_b665d519d9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 4.25,
+            path: null,
+            url: "/uploads/thumbnail_accommodation35_b665d519d9.jpg"
+          },
+          large: {
+            name: "large_accommodation35.jpg",
+            hash: "large_accommodation35_b665d519d9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 111.45,
+            path: null,
+            url: "/uploads/large_accommodation35_b665d519d9.jpg"
+          },
+          medium: {
+            name: "medium_accommodation35.jpg",
+            hash: "medium_accommodation35_b665d519d9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 67.15,
+            path: null,
+            url: "/uploads/medium_accommodation35_b665d519d9.jpg"
+          },
+          small: {
+            name: "small_accommodation35.jpg",
+            hash: "small_accommodation35_b665d519d9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 31.65,
+            path: null,
+            url: "/uploads/small_accommodation35_b665d519d9.jpg"
+          }
+        },
+        hash: "accommodation35_b665d519d9",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 774.86,
+        url: "/uploads/accommodation35_b665d519d9.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:52:37.000Z",
+        updated_at: "2022-04-29T06:52:37.000Z"
+      },
+      {
+        id: 15,
+        name: "accommodation33.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 3413,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation33.jpg",
+            hash: "thumbnail_accommodation33_73de7fdc53",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 88,
+            height: 156,
+            size: 3.28,
+            path: null,
+            url: "/uploads/thumbnail_accommodation33_73de7fdc53.jpg"
+          },
+          large: {
+            name: "large_accommodation33.jpg",
+            hash: "large_accommodation33_73de7fdc53",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 563,
+            height: 1000,
+            size: 91.52,
+            path: null,
+            url: "/uploads/large_accommodation33_73de7fdc53.jpg"
+          },
+          medium: {
+            name: "medium_accommodation33.jpg",
+            hash: "medium_accommodation33_73de7fdc53",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 422,
+            height: 750,
+            size: 51.72,
+            path: null,
+            url: "/uploads/medium_accommodation33_73de7fdc53.jpg"
+          },
+          small: {
+            name: "small_accommodation33.jpg",
+            hash: "small_accommodation33_73de7fdc53",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 281,
+            height: 500,
+            size: 24.93,
+            path: null,
+            url: "/uploads/small_accommodation33_73de7fdc53.jpg"
+          }
+        },
+        hash: "accommodation33_73de7fdc53",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 670.24,
+        url: "/uploads/accommodation33_73de7fdc53.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:52:37.000Z",
+        updated_at: "2022-04-29T06:52:37.000Z"
+      }
+    ]
+  },
+  {
+    id: 12,
+    name: "Bergen bnb",
+    published_at: "2022-04-29T06:53:34.000Z",
+    created_at: "2022-04-29T06:53:34.000Z",
+    updated_at: "2022-04-30T05:42:28.000Z",
+    description: "Modern apartment centrally localised in Fredensborg area, central Bergen. Quiet neighbourhood. 5 min bus to downtown(Jernbanetorget) 1 min walk from bus to apartment. 10 min walk to Grünerløkka. Small, but efficient apartment with fireplace and king size bed. Guest access Whole home and private rooftop terrace. ",
+    address: "Vestre Strømkaien 3C, 5008 Bergen",
+    bedrooms: 3,
+    bathrooms: 2,
+    priceday: 110,
+    priceweek: 600,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":false,"
+    Washing Machine ":true,"
+    Fitness ":false}",
+    votes: 2,
+    votestotal: 7,
+    visits: 13,
+    favorites: 1,
+    score: 3.5,
+    images: [{
+        id: 16,
+        name: "accommodation30.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation30.jpg",
+            hash: "thumbnail_accommodation30_0b54601e78",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 9.13,
+            path: null,
+            url: "/uploads/thumbnail_accommodation30_0b54601e78.jpg"
+          },
+          large: {
+            name: "large_accommodation30.jpg",
+            hash: "large_accommodation30_0b54601e78",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 119.68,
+            path: null,
+            url: "/uploads/large_accommodation30_0b54601e78.jpg"
+          },
+          medium: {
+            name: "medium_accommodation30.jpg",
+            hash: "medium_accommodation30_0b54601e78",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 69.64,
+            path: null,
+            url: "/uploads/medium_accommodation30_0b54601e78.jpg"
+          },
+          small: {
+            name: "small_accommodation30.jpg",
+            hash: "small_accommodation30_0b54601e78",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 34.22,
+            path: null,
+            url: "/uploads/small_accommodation30_0b54601e78.jpg"
+          }
+        },
+        hash: "accommodation30_0b54601e78",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 412.63,
+        url: "/uploads/accommodation30_0b54601e78.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:53:34.000Z",
+        updated_at: "2022-04-29T06:53:34.000Z"
+      },
+      {
+        id: 17,
+        name: "accommodation29.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1694,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation29.jpg",
+            hash: "thumbnail_accommodation29_e2d4749092",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 177,
+            height: 156,
+            size: 5.28,
+            path: null,
+            url: "/uploads/thumbnail_accommodation29_e2d4749092.jpg"
+          },
+          large: {
+            name: "large_accommodation29.jpg",
+            hash: "large_accommodation29_e2d4749092",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 882,
+            size: 84.83,
+            path: null,
+            url: "/uploads/large_accommodation29_e2d4749092.jpg"
+          },
+          medium: {
+            name: "medium_accommodation29.jpg",
+            hash: "medium_accommodation29_e2d4749092",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 662,
+            size: 49.54,
+            path: null,
+            url: "/uploads/medium_accommodation29_e2d4749092.jpg"
+          },
+          small: {
+            name: "small_accommodation29.jpg",
+            hash: "small_accommodation29_e2d4749092",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 441,
+            size: 25.15,
+            path: null,
+            url: "/uploads/small_accommodation29_e2d4749092.jpg"
+          }
+        },
+        hash: "accommodation29_e2d4749092",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 342.79,
+        url: "/uploads/accommodation29_e2d4749092.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:53:34.000Z",
+        updated_at: "2022-04-29T06:53:34.000Z"
+      },
+      {
+        id: 18,
+        name: "accommodation31.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1406,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation31.jpg",
+            hash: "thumbnail_accommodation31_10820106ea",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 213,
+            height: 156,
+            size: 6.25,
+            path: null,
+            url: "/uploads/thumbnail_accommodation31_10820106ea.jpg"
+          },
+          large: {
+            name: "large_accommodation31.jpg",
+            hash: "large_accommodation31_10820106ea",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 732,
+            size: 111.62,
+            path: null,
+            url: "/uploads/large_accommodation31_10820106ea.jpg"
+          },
+          medium: {
+            name: "medium_accommodation31.jpg",
+            hash: "medium_accommodation31_10820106ea",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 549,
+            size: 60.35,
+            path: null,
+            url: "/uploads/medium_accommodation31_10820106ea.jpg"
+          },
+          small: {
+            name: "small_accommodation31.jpg",
+            hash: "small_accommodation31_10820106ea",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 366,
+            size: 27.31,
+            path: null,
+            url: "/uploads/small_accommodation31_10820106ea.jpg"
+          }
+        },
+        hash: "accommodation31_10820106ea",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 425.19,
+        url: "/uploads/accommodation31_10820106ea.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:53:34.000Z",
+        updated_at: "2022-04-29T06:53:34.000Z"
+      },
+      {
+        id: 19,
+        name: "accommodation28.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1920,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation28.jpg",
+            hash: "thumbnail_accommodation28_f4a13ff6b9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 156,
+            height: 156,
+            size: 5.72,
+            path: null,
+            url: "/uploads/thumbnail_accommodation28_f4a13ff6b9.jpg"
+          },
+          large: {
+            name: "large_accommodation28.jpg",
+            hash: "large_accommodation28_f4a13ff6b9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 1000,
+            size: 135.79,
+            path: null,
+            url: "/uploads/large_accommodation28_f4a13ff6b9.jpg"
+          },
+          medium: {
+            name: "medium_accommodation28.jpg",
+            hash: "medium_accommodation28_f4a13ff6b9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 750,
+            size: 77.41,
+            path: null,
+            url: "/uploads/medium_accommodation28_f4a13ff6b9.jpg"
+          },
+          small: {
+            name: "small_accommodation28.jpg",
+            hash: "small_accommodation28_f4a13ff6b9",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 500,
+            size: 37.27,
+            path: null,
+            url: "/uploads/small_accommodation28_f4a13ff6b9.jpg"
+          }
+        },
+        hash: "accommodation28_f4a13ff6b9",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 551.9,
+        url: "/uploads/accommodation28_f4a13ff6b9.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:53:35.000Z",
+        updated_at: "2022-04-29T06:53:35.000Z"
+      }
+    ]
+  },
+  {
+    id: 13,
+    name: "Kronos BnB",
+    published_at: "2022-04-29T06:54:42.000Z",
+    created_at: "2022-04-29T06:54:42.000Z",
+    updated_at: "2022-04-29T07:08:21.000Z",
+    description: "The apartment is centrally located on Ensjø, a 3min walk from the subway station. Child-friendly, with large lawn on both sides of the building. Sunny balcony with gas grill. Here it is also nice to sit on warm summer evenings. Central firing and hot water included. No pets or smoking indoors are allowed, nor any partying. Common quiet rules apply. Parking included. ",
+    address: "Fv585 67, 5017 Bergen",
+    bedrooms: 4,
+    bathrooms: 2,
+    priceday: 300,
+    priceweek: 1500,
+    amenities: "{"
+    WI - FI ":false,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":true,"
+    Washing Machine ":true,"
+    Fitness ":false}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 20,
+        name: "accommodation27.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation27.jpg",
+            hash: "thumbnail_accommodation27_9c48940db5",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.51,
+            path: null,
+            url: "/uploads/thumbnail_accommodation27_9c48940db5.jpg"
+          },
+          large: {
+            name: "large_accommodation27.jpg",
+            hash: "large_accommodation27_9c48940db5",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 92.96,
+            path: null,
+            url: "/uploads/large_accommodation27_9c48940db5.jpg"
+          },
+          medium: {
+            name: "medium_accommodation27.jpg",
+            hash: "medium_accommodation27_9c48940db5",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 55.9,
+            path: null,
+            url: "/uploads/medium_accommodation27_9c48940db5.jpg"
+          },
+          small: {
+            name: "small_accommodation27.jpg",
+            hash: "small_accommodation27_9c48940db5",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 29.06,
+            path: null,
+            url: "/uploads/small_accommodation27_9c48940db5.jpg"
+          }
+        },
+        hash: "accommodation27_9c48940db5",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 307.65,
+        url: "/uploads/accommodation27_9c48940db5.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:54:43.000Z",
+        updated_at: "2022-04-29T06:54:43.000Z"
+      },
+      {
+        id: 21,
+        name: "accommodation25.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation25.jpg",
+            hash: "thumbnail_accommodation25_f7a3d0395a",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 9.03,
+            path: null,
+            url: "/uploads/thumbnail_accommodation25_f7a3d0395a.jpg"
+          },
+          large: {
+            name: "large_accommodation25.jpg",
+            hash: "large_accommodation25_f7a3d0395a",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 107.34,
+            path: null,
+            url: "/uploads/large_accommodation25_f7a3d0395a.jpg"
+          },
+          medium: {
+            name: "medium_accommodation25.jpg",
+            hash: "medium_accommodation25_f7a3d0395a",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 62.93,
+            path: null,
+            url: "/uploads/medium_accommodation25_f7a3d0395a.jpg"
+          },
+          small: {
+            name: "small_accommodation25.jpg",
+            hash: "small_accommodation25_f7a3d0395a",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 31.33,
+            path: null,
+            url: "/uploads/small_accommodation25_f7a3d0395a.jpg"
+          }
+        },
+        hash: "accommodation25_f7a3d0395a",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 364.67,
+        url: "/uploads/accommodation25_f7a3d0395a.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:54:43.000Z",
+        updated_at: "2022-04-29T06:54:43.000Z"
+      },
+      {
+        id: 22,
+        name: "promotion2.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1536,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion2.jpg",
+            hash: "thumbnail_promotion2_486e6be04f",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 195,
+            height: 156,
+            size: 5.55,
+            path: null,
+            url: "/uploads/thumbnail_promotion2_486e6be04f.jpg"
+          },
+          large: {
+            name: "large_promotion2.jpg",
+            hash: "large_promotion2_486e6be04f",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 800,
+            size: 108.8,
+            path: null,
+            url: "/uploads/large_promotion2_486e6be04f.jpg"
+          },
+          medium: {
+            name: "medium_promotion2.jpg",
+            hash: "medium_promotion2_486e6be04f",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 600,
+            size: 59.66,
+            path: null,
+            url: "/uploads/medium_promotion2_486e6be04f.jpg"
+          },
+          small: {
+            name: "small_promotion2.jpg",
+            hash: "small_promotion2_486e6be04f",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 400,
+            size: 26.79,
+            path: null,
+            url: "/uploads/small_promotion2_486e6be04f.jpg"
+          }
+        },
+        hash: "promotion2_486e6be04f",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 525.23,
+        url: "/uploads/promotion2_486e6be04f.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:54:43.000Z",
+        updated_at: "2022-04-29T06:54:43.000Z"
+      },
+      {
+        id: 23,
+        name: "accommodation24.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation24.jpg",
+            hash: "thumbnail_accommodation24_89d9e4e554",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.3,
+            path: null,
+            url: "/uploads/thumbnail_accommodation24_89d9e4e554.jpg"
+          },
+          large: {
+            name: "large_accommodation24.jpg",
+            hash: "large_accommodation24_89d9e4e554",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 71.41,
+            path: null,
+            url: "/uploads/large_accommodation24_89d9e4e554.jpg"
+          },
+          medium: {
+            name: "medium_accommodation24.jpg",
+            hash: "medium_accommodation24_89d9e4e554",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 41.32,
+            path: null,
+            url: "/uploads/medium_accommodation24_89d9e4e554.jpg"
+          },
+          small: {
+            name: "small_accommodation24.jpg",
+            hash: "small_accommodation24_89d9e4e554",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 20.09,
+            path: null,
+            url: "/uploads/small_accommodation24_89d9e4e554.jpg"
+          }
+        },
+        hash: "accommodation24_89d9e4e554",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 991.56,
+        url: "/uploads/accommodation24_89d9e4e554.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:54:43.000Z",
+        updated_at: "2022-04-29T06:54:43.000Z"
+      },
+      {
+        id: 24,
+        name: "accommodation26.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation26.jpg",
+            hash: "thumbnail_accommodation26_13797bc227",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 20.85,
+            path: null,
+            url: "/uploads/thumbnail_accommodation26_13797bc227.jpg"
+          },
+          large: {
+            name: "large_accommodation26.jpg",
+            hash: "large_accommodation26_13797bc227",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 110.39,
+            path: null,
+            url: "/uploads/large_accommodation26_13797bc227.jpg"
+          },
+          medium: {
+            name: "medium_accommodation26.jpg",
+            hash: "medium_accommodation26_13797bc227",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 71.72,
+            path: null,
+            url: "/uploads/medium_accommodation26_13797bc227.jpg"
+          },
+          small: {
+            name: "small_accommodation26.jpg",
+            hash: "small_accommodation26_13797bc227",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 42.67,
+            path: null,
+            url: "/uploads/small_accommodation26_13797bc227.jpg"
+          }
+        },
+        hash: "accommodation26_13797bc227",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 593.9,
+        url: "/uploads/accommodation26_13797bc227.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:54:43.000Z",
+        updated_at: "2022-04-29T06:54:43.000Z"
+      }
+    ]
+  },
+  {
+    id: 14,
+    name: "Bnb Bergen",
+    published_at: "2022-04-29T06:56:53.000Z",
+    created_at: "2022-04-29T06:56:53.000Z",
+    updated_at: "2022-04-29T17:43:34.000Z",
+    description: "In our beautiful fully equipped studio apartments, will you be staying in high standard with nice furniture. Cozy living room, fully equipped kitchen-corner and 3 beds. The apartment is suitable for one or two persons. You will enjoy a pleasant stay in the middle of Oslo's most hippest district, Grünerløkka!\nService fee included in the price. ",
+    address: "Fjellveien 62, 5019 Bergen",
+    bedrooms: 3,
+    bathrooms: 1,
+    priceday: 120,
+    priceweek: 597,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":true,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 1,
+    votestotal: 5,
+    visits: 1,
+    favorites: 0,
+    score: 5,
+    images: [{
+        id: 25,
+        name: "promotion3.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 1200,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion3.jpg",
+            hash: "thumbnail_promotion3_158fddd73b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.22,
+            path: null,
+            url: "/uploads/thumbnail_promotion3_158fddd73b.jpg"
+          },
+          large: {
+            name: "large_promotion3.jpg",
+            hash: "large_promotion3_158fddd73b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 87.63,
+            path: null,
+            url: "/uploads/large_promotion3_158fddd73b.jpg"
+          },
+          medium: {
+            name: "medium_promotion3.jpg",
+            hash: "medium_promotion3_158fddd73b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 52.54,
+            path: null,
+            url: "/uploads/medium_promotion3_158fddd73b.jpg"
+          },
+          small: {
+            name: "small_promotion3.jpg",
+            hash: "small_promotion3_158fddd73b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 27.26,
+            path: null,
+            url: "/uploads/small_promotion3_158fddd73b.jpg"
+          }
+        },
+        hash: "promotion3_158fddd73b",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 254.45,
+        url: "/uploads/promotion3_158fddd73b.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:56:54.000Z",
+        updated_at: "2022-04-29T06:56:54.000Z"
+      },
+      {
+        id: 26,
+        name: "accommodation27.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation27.jpg",
+            hash: "thumbnail_accommodation27_9637da8130",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.51,
+            path: null,
+            url: "/uploads/thumbnail_accommodation27_9637da8130.jpg"
+          },
+          large: {
+            name: "large_accommodation27.jpg",
+            hash: "large_accommodation27_9637da8130",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 92.96,
+            path: null,
+            url: "/uploads/large_accommodation27_9637da8130.jpg"
+          },
+          medium: {
+            name: "medium_accommodation27.jpg",
+            hash: "medium_accommodation27_9637da8130",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 55.9,
+            path: null,
+            url: "/uploads/medium_accommodation27_9637da8130.jpg"
+          },
+          small: {
+            name: "small_accommodation27.jpg",
+            hash: "small_accommodation27_9637da8130",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 29.06,
+            path: null,
+            url: "/uploads/small_accommodation27_9637da8130.jpg"
+          }
+        },
+        hash: "accommodation27_9637da8130",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 307.65,
+        url: "/uploads/accommodation27_9637da8130.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:56:54.000Z",
+        updated_at: "2022-04-29T06:56:54.000Z"
+      },
+      {
+        id: 27,
+        name: "accommodation18.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation18.jpg",
+            hash: "thumbnail_accommodation18_dcf0aeef39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.51,
+            path: null,
+            url: "/uploads/thumbnail_accommodation18_dcf0aeef39.jpg"
+          },
+          large: {
+            name: "large_accommodation18.jpg",
+            hash: "large_accommodation18_dcf0aeef39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 55.98,
+            path: null,
+            url: "/uploads/large_accommodation18_dcf0aeef39.jpg"
+          },
+          medium: {
+            name: "medium_accommodation18.jpg",
+            hash: "medium_accommodation18_dcf0aeef39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 35.14,
+            path: null,
+            url: "/uploads/medium_accommodation18_dcf0aeef39.jpg"
+          },
+          small: {
+            name: "small_accommodation18.jpg",
+            hash: "small_accommodation18_dcf0aeef39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 18.36,
+            path: null,
+            url: "/uploads/small_accommodation18_dcf0aeef39.jpg"
+          }
+        },
+        hash: "accommodation18_dcf0aeef39",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 384.24,
+        url: "/uploads/accommodation18_dcf0aeef39.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:56:54.000Z",
+        updated_at: "2022-04-29T06:56:54.000Z"
+      },
+      {
+        id: 28,
+        name: "accommodation26.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation26.jpg",
+            hash: "thumbnail_accommodation26_ea6a9daa99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 20.85,
+            path: null,
+            url: "/uploads/thumbnail_accommodation26_ea6a9daa99.jpg"
+          },
+          large: {
+            name: "large_accommodation26.jpg",
+            hash: "large_accommodation26_ea6a9daa99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 110.39,
+            path: null,
+            url: "/uploads/large_accommodation26_ea6a9daa99.jpg"
+          },
+          medium: {
+            name: "medium_accommodation26.jpg",
+            hash: "medium_accommodation26_ea6a9daa99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 71.72,
+            path: null,
+            url: "/uploads/medium_accommodation26_ea6a9daa99.jpg"
+          },
+          small: {
+            name: "small_accommodation26.jpg",
+            hash: "small_accommodation26_ea6a9daa99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 42.67,
+            path: null,
+            url: "/uploads/small_accommodation26_ea6a9daa99.jpg"
+          }
+        },
+        hash: "accommodation26_ea6a9daa99",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 593.9,
+        url: "/uploads/accommodation26_ea6a9daa99.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:56:54.000Z",
+        updated_at: "2022-04-29T06:56:54.000Z"
+      }
+    ]
+  },
+  {
+    id: 15,
+    name: "Royal Bergen",
+    published_at: "2022-04-29T06:57:46.000Z",
+    created_at: "2022-04-29T06:57:46.000Z",
+    updated_at: "2022-04-29T07:09:00.000Z",
+    description: "Simple and peaceful accommodation in a central location. Nice apartment courtyard with apartment for two. Tram right next door. Nice apartment close to Bergen Centre for two people.",
+    address: "Ole Irgens' vei 57-61, 5019 Bergen",
+    bedrooms: 2,
+    bathrooms: 2,
+    priceday: 90,
+    priceweek: 450,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":false,"
+    Child Friendly ":true,"
+    Accessible ":false,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 29,
+        name: "accommodation23.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1745,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation23.jpg",
+            hash: "thumbnail_accommodation23_fea1746c03",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 172,
+            height: 156,
+            size: 6.41,
+            path: null,
+            url: "/uploads/thumbnail_accommodation23_fea1746c03.jpg"
+          },
+          large: {
+            name: "large_accommodation23.jpg",
+            hash: "large_accommodation23_fea1746c03",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 909,
+            size: 115.17,
+            path: null,
+            url: "/uploads/large_accommodation23_fea1746c03.jpg"
+          },
+          medium: {
+            name: "medium_accommodation23.jpg",
+            hash: "medium_accommodation23_fea1746c03",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 682,
+            size: 68.46,
+            path: null,
+            url: "/uploads/medium_accommodation23_fea1746c03.jpg"
+          },
+          small: {
+            name: "small_accommodation23.jpg",
+            hash: "small_accommodation23_fea1746c03",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 454,
+            size: 34.08,
+            path: null,
+            url: "/uploads/small_accommodation23_fea1746c03.jpg"
+          }
+        },
+        hash: "accommodation23_fea1746c03",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 421.05,
+        url: "/uploads/accommodation23_fea1746c03.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:57:46.000Z",
+        updated_at: "2022-04-29T06:57:46.000Z"
+      },
+      {
+        id: 30,
+        name: "promotion2.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1536,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion2.jpg",
+            hash: "thumbnail_promotion2_0c9e9b03bd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 195,
+            height: 156,
+            size: 5.55,
+            path: null,
+            url: "/uploads/thumbnail_promotion2_0c9e9b03bd.jpg"
+          },
+          large: {
+            name: "large_promotion2.jpg",
+            hash: "large_promotion2_0c9e9b03bd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 800,
+            size: 108.8,
+            path: null,
+            url: "/uploads/large_promotion2_0c9e9b03bd.jpg"
+          },
+          medium: {
+            name: "medium_promotion2.jpg",
+            hash: "medium_promotion2_0c9e9b03bd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 600,
+            size: 59.66,
+            path: null,
+            url: "/uploads/medium_promotion2_0c9e9b03bd.jpg"
+          },
+          small: {
+            name: "small_promotion2.jpg",
+            hash: "small_promotion2_0c9e9b03bd",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 400,
+            size: 26.79,
+            path: null,
+            url: "/uploads/small_promotion2_0c9e9b03bd.jpg"
+          }
+        },
+        hash: "promotion2_0c9e9b03bd",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 525.23,
+        url: "/uploads/promotion2_0c9e9b03bd.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:57:46.000Z",
+        updated_at: "2022-04-29T06:57:46.000Z"
+      },
+      {
+        id: 31,
+        name: "accommodation18.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation18.jpg",
+            hash: "thumbnail_accommodation18_e6e51387bc",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.51,
+            path: null,
+            url: "/uploads/thumbnail_accommodation18_e6e51387bc.jpg"
+          },
+          large: {
+            name: "large_accommodation18.jpg",
+            hash: "large_accommodation18_e6e51387bc",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 55.98,
+            path: null,
+            url: "/uploads/large_accommodation18_e6e51387bc.jpg"
+          },
+          medium: {
+            name: "medium_accommodation18.jpg",
+            hash: "medium_accommodation18_e6e51387bc",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 35.14,
+            path: null,
+            url: "/uploads/medium_accommodation18_e6e51387bc.jpg"
+          },
+          small: {
+            name: "small_accommodation18.jpg",
+            hash: "small_accommodation18_e6e51387bc",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 18.36,
+            path: null,
+            url: "/uploads/small_accommodation18_e6e51387bc.jpg"
+          }
+        },
+        hash: "accommodation18_e6e51387bc",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 384.24,
+        url: "/uploads/accommodation18_e6e51387bc.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:57:46.000Z",
+        updated_at: "2022-04-29T06:57:46.000Z"
+      }
+    ]
+  },
+  {
+    id: 16,
+    name: "Bergen Royal Blue",
+    published_at: "2022-04-29T06:59:19.000Z",
+    created_at: "2022-04-29T06:59:19.000Z",
+    updated_at: "2022-04-29T07:06:03.000Z",
+    description: "Apartment (one room) in charming and quiet area in central Bergen. Perfect also for business trips. The apartment has one room plus bathroom. It sleeps 1 (bed - 120 cm width). Newly renovated. The kitchen is equipped with microoven, one hotplate, fridge, electric kettle, cafétier, cutlery, plates etc for four persons. Washing machine in the bathroom. Smoking is not permitted. ",
+    address: "Ole Irgens' vei 1-9, 5019 Bergen",
+    bedrooms: 1,
+    bathrooms: 1,
+    priceday: 160,
+    priceweek: 180,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":true,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 32,
+        name: "accommodation25.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation25.jpg",
+            hash: "thumbnail_accommodation25_4db6296241",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 9.03,
+            path: null,
+            url: "/uploads/thumbnail_accommodation25_4db6296241.jpg"
+          },
+          large: {
+            name: "large_accommodation25.jpg",
+            hash: "large_accommodation25_4db6296241",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 107.34,
+            path: null,
+            url: "/uploads/large_accommodation25_4db6296241.jpg"
+          },
+          medium: {
+            name: "medium_accommodation25.jpg",
+            hash: "medium_accommodation25_4db6296241",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 62.93,
+            path: null,
+            url: "/uploads/medium_accommodation25_4db6296241.jpg"
+          },
+          small: {
+            name: "small_accommodation25.jpg",
+            hash: "small_accommodation25_4db6296241",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 31.33,
+            path: null,
+            url: "/uploads/small_accommodation25_4db6296241.jpg"
+          }
+        },
+        hash: "accommodation25_4db6296241",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 364.67,
+        url: "/uploads/accommodation25_4db6296241.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:59:20.000Z",
+        updated_at: "2022-04-29T06:59:20.000Z"
+      },
+      {
+        id: 33,
+        name: "accommodation28.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1920,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation28.jpg",
+            hash: "thumbnail_accommodation28_bc5a34ea91",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 156,
+            height: 156,
+            size: 5.72,
+            path: null,
+            url: "/uploads/thumbnail_accommodation28_bc5a34ea91.jpg"
+          },
+          large: {
+            name: "large_accommodation28.jpg",
+            hash: "large_accommodation28_bc5a34ea91",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 1000,
+            size: 135.79,
+            path: null,
+            url: "/uploads/large_accommodation28_bc5a34ea91.jpg"
+          },
+          medium: {
+            name: "medium_accommodation28.jpg",
+            hash: "medium_accommodation28_bc5a34ea91",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 750,
+            size: 77.41,
+            path: null,
+            url: "/uploads/medium_accommodation28_bc5a34ea91.jpg"
+          },
+          small: {
+            name: "small_accommodation28.jpg",
+            hash: "small_accommodation28_bc5a34ea91",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 500,
+            size: 37.27,
+            path: null,
+            url: "/uploads/small_accommodation28_bc5a34ea91.jpg"
+          }
+        },
+        hash: "accommodation28_bc5a34ea91",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 551.9,
+        url: "/uploads/accommodation28_bc5a34ea91.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:59:20.000Z",
+        updated_at: "2022-04-29T06:59:20.000Z"
+      },
+      {
+        id: 34,
+        name: "accommodation22.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2878,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation22.jpg",
+            hash: "thumbnail_accommodation22_9502710a12",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.9,
+            path: null,
+            url: "/uploads/thumbnail_accommodation22_9502710a12.jpg"
+          },
+          large: {
+            name: "large_accommodation22.jpg",
+            hash: "large_accommodation22_9502710a12",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 63.23,
+            path: null,
+            url: "/uploads/large_accommodation22_9502710a12.jpg"
+          },
+          medium: {
+            name: "medium_accommodation22.jpg",
+            hash: "medium_accommodation22_9502710a12",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 39.85,
+            path: null,
+            url: "/uploads/medium_accommodation22_9502710a12.jpg"
+          },
+          small: {
+            name: "small_accommodation22.jpg",
+            hash: "small_accommodation22_9502710a12",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 334,
+            height: 500,
+            size: 21.15,
+            path: null,
+            url: "/uploads/small_accommodation22_9502710a12.jpg"
+          }
+        },
+        hash: "accommodation22_9502710a12",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 554.96,
+        url: "/uploads/accommodation22_9502710a12.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:59:20.000Z",
+        updated_at: "2022-04-29T06:59:20.000Z"
+      },
+      {
+        id: 35,
+        name: "accommodation26.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation26.jpg",
+            hash: "thumbnail_accommodation26_04809244a2",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 20.85,
+            path: null,
+            url: "/uploads/thumbnail_accommodation26_04809244a2.jpg"
+          },
+          large: {
+            name: "large_accommodation26.jpg",
+            hash: "large_accommodation26_04809244a2",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 110.39,
+            path: null,
+            url: "/uploads/large_accommodation26_04809244a2.jpg"
+          },
+          medium: {
+            name: "medium_accommodation26.jpg",
+            hash: "medium_accommodation26_04809244a2",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 71.72,
+            path: null,
+            url: "/uploads/medium_accommodation26_04809244a2.jpg"
+          },
+          small: {
+            name: "small_accommodation26.jpg",
+            hash: "small_accommodation26_04809244a2",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 42.67,
+            path: null,
+            url: "/uploads/small_accommodation26_04809244a2.jpg"
+          }
+        },
+        hash: "accommodation26_04809244a2",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 593.9,
+        url: "/uploads/accommodation26_04809244a2.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T06:59:20.000Z",
+        updated_at: "2022-04-29T06:59:20.000Z"
+      }
+    ]
+  },
+  {
+    id: 17,
+    name: "Magic Bnb",
+    published_at: "2022-04-29T07:00:10.000Z",
+    created_at: "2022-04-29T07:00:10.000Z",
+    updated_at: "2022-04-29T07:07:33.000Z",
+    description: "Newly renovated apartment centrally located in Bergen. Here you can be alone, couples or more if you want this. The apartment has its own connected parking space with charging facilities and parking for any guests. Apartment is located at Sagene in Bergen, where there are plenty of public possibilities or just a short walk along Akerselva down to the city. If you'd rather take advantage of the forest, this is also very close.",
+    address: "Kalvedalsveien 54A, 5018 Bergen",
+    bedrooms: 5,
+    bathrooms: 2,
+    priceday: 200,
+    priceweek: 900,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":false,"
+    Child Friendly ":true,"
+    Accessible ":true,"
+    Washing Machine ":false,"
+    Fitness ":true}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 36,
+        name: "accommodation21.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation21.jpg",
+            hash: "thumbnail_accommodation21_5d49478c39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.26,
+            path: null,
+            url: "/uploads/thumbnail_accommodation21_5d49478c39.jpg"
+          },
+          large: {
+            name: "large_accommodation21.jpg",
+            hash: "large_accommodation21_5d49478c39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 81.87,
+            path: null,
+            url: "/uploads/large_accommodation21_5d49478c39.jpg"
+          },
+          medium: {
+            name: "medium_accommodation21.jpg",
+            hash: "medium_accommodation21_5d49478c39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 50.8,
+            path: null,
+            url: "/uploads/medium_accommodation21_5d49478c39.jpg"
+          },
+          small: {
+            name: "small_accommodation21.jpg",
+            hash: "small_accommodation21_5d49478c39",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 26.86,
+            path: null,
+            url: "/uploads/small_accommodation21_5d49478c39.jpg"
+          }
+        },
+        hash: "accommodation21_5d49478c39",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 253.77,
+        url: "/uploads/accommodation21_5d49478c39.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:00:11.000Z",
+        updated_at: "2022-04-29T07:00:11.000Z"
+      },
+      {
+        id: 37,
+        name: "accommodation31.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1406,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation31.jpg",
+            hash: "thumbnail_accommodation31_35757ea5e0",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 213,
+            height: 156,
+            size: 6.25,
+            path: null,
+            url: "/uploads/thumbnail_accommodation31_35757ea5e0.jpg"
+          },
+          large: {
+            name: "large_accommodation31.jpg",
+            hash: "large_accommodation31_35757ea5e0",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 732,
+            size: 111.62,
+            path: null,
+            url: "/uploads/large_accommodation31_35757ea5e0.jpg"
+          },
+          medium: {
+            name: "medium_accommodation31.jpg",
+            hash: "medium_accommodation31_35757ea5e0",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 549,
+            size: 60.35,
+            path: null,
+            url: "/uploads/medium_accommodation31_35757ea5e0.jpg"
+          },
+          small: {
+            name: "small_accommodation31.jpg",
+            hash: "small_accommodation31_35757ea5e0",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 366,
+            size: 27.31,
+            path: null,
+            url: "/uploads/small_accommodation31_35757ea5e0.jpg"
+          }
+        },
+        hash: "accommodation31_35757ea5e0",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 425.19,
+        url: "/uploads/accommodation31_35757ea5e0.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:00:11.000Z",
+        updated_at: "2022-04-29T07:00:11.000Z"
+      },
+      {
+        id: 38,
+        name: "promotion2.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1536,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion2.jpg",
+            hash: "thumbnail_promotion2_c593b60188",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 195,
+            height: 156,
+            size: 5.55,
+            path: null,
+            url: "/uploads/thumbnail_promotion2_c593b60188.jpg"
+          },
+          large: {
+            name: "large_promotion2.jpg",
+            hash: "large_promotion2_c593b60188",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 800,
+            size: 108.8,
+            path: null,
+            url: "/uploads/large_promotion2_c593b60188.jpg"
+          },
+          medium: {
+            name: "medium_promotion2.jpg",
+            hash: "medium_promotion2_c593b60188",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 600,
+            size: 59.66,
+            path: null,
+            url: "/uploads/medium_promotion2_c593b60188.jpg"
+          },
+          small: {
+            name: "small_promotion2.jpg",
+            hash: "small_promotion2_c593b60188",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 400,
+            size: 26.79,
+            path: null,
+            url: "/uploads/small_promotion2_c593b60188.jpg"
+          }
+        },
+        hash: "promotion2_c593b60188",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 525.23,
+        url: "/uploads/promotion2_c593b60188.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:00:11.000Z",
+        updated_at: "2022-04-29T07:00:11.000Z"
+      },
+      {
+        id: 39,
+        name: "accommodation18.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 2880,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation18.jpg",
+            hash: "thumbnail_accommodation18_e80a6406cb",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.51,
+            path: null,
+            url: "/uploads/thumbnail_accommodation18_e80a6406cb.jpg"
+          },
+          large: {
+            name: "large_accommodation18.jpg",
+            hash: "large_accommodation18_e80a6406cb",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 55.98,
+            path: null,
+            url: "/uploads/large_accommodation18_e80a6406cb.jpg"
+          },
+          medium: {
+            name: "medium_accommodation18.jpg",
+            hash: "medium_accommodation18_e80a6406cb",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 35.14,
+            path: null,
+            url: "/uploads/medium_accommodation18_e80a6406cb.jpg"
+          },
+          small: {
+            name: "small_accommodation18.jpg",
+            hash: "small_accommodation18_e80a6406cb",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 18.36,
+            path: null,
+            url: "/uploads/small_accommodation18_e80a6406cb.jpg"
+          }
+        },
+        hash: "accommodation18_e80a6406cb",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 384.24,
+        url: "/uploads/accommodation18_e80a6406cb.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:00:11.000Z",
+        updated_at: "2022-04-29T07:00:11.000Z"
+      }
+    ]
+  },
+  {
+    id: 18,
+    name: "Scandic City",
+    published_at: "2022-04-29T07:01:01.000Z",
+    created_at: "2022-04-29T07:01:01.000Z",
+    updated_at: "2022-04-29T07:09:16.000Z",
+    description: "Super central location (Fredensborgveien 11) with a beautiful view over Bergen. The elevator brings you up to the top floor,10 min walk from Bergen central station. Quiet and peaceful. Kristeparken park is just neerby and gives you a nice feeling in the midle of the city. There is training facileties in the park, (Tuftepark) Take the moorning coffey on the balkony and enjoi the sunrise. Welcome.",
+    address: "Fløenbakken 10, 5009 Bergen",
+    bedrooms: 4,
+    bathrooms: 3,
+    priceday: 180,
+    priceweek: 846,
+    amenities: "{"
+    WI - FI ":false,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":false,"
+    Washing Machine ":true,"
+    Fitness ":false}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 40,
+        name: "accommodation8.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 1200,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation8.jpg",
+            hash: "thumbnail_accommodation8_f337e826d4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 9.02,
+            path: null,
+            url: "/uploads/thumbnail_accommodation8_f337e826d4.jpg"
+          },
+          large: {
+            name: "large_accommodation8.jpg",
+            hash: "large_accommodation8_f337e826d4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 85.24,
+            path: null,
+            url: "/uploads/large_accommodation8_f337e826d4.jpg"
+          },
+          medium: {
+            name: "medium_accommodation8.jpg",
+            hash: "medium_accommodation8_f337e826d4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 52.83,
+            path: null,
+            url: "/uploads/medium_accommodation8_f337e826d4.jpg"
+          },
+          small: {
+            name: "small_accommodation8.jpg",
+            hash: "small_accommodation8_f337e826d4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 28.64,
+            path: null,
+            url: "/uploads/small_accommodation8_f337e826d4.jpg"
+          }
+        },
+        hash: "accommodation8_f337e826d4",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 232.55,
+        url: "/uploads/accommodation8_f337e826d4.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:02.000Z",
+        updated_at: "2022-04-29T07:01:02.000Z"
+      },
+      {
+        id: 41,
+        name: "accommodation16.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 2693,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation16.jpg",
+            hash: "thumbnail_accommodation16_fb1387649e",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 3.94,
+            path: null,
+            url: "/uploads/thumbnail_accommodation16_fb1387649e.jpg"
+          },
+          large: {
+            name: "large_accommodation16.jpg",
+            hash: "large_accommodation16_fb1387649e",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 668,
+            height: 1000,
+            size: 65.04,
+            path: null,
+            url: "/uploads/large_accommodation16_fb1387649e.jpg"
+          },
+          medium: {
+            name: "medium_accommodation16.jpg",
+            hash: "medium_accommodation16_fb1387649e",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 501,
+            height: 750,
+            size: 40.39,
+            path: null,
+            url: "/uploads/medium_accommodation16_fb1387649e.jpg"
+          },
+          small: {
+            name: "small_accommodation16.jpg",
+            hash: "small_accommodation16_fb1387649e",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 334,
+            height: 500,
+            size: 20.7,
+            path: null,
+            url: "/uploads/small_accommodation16_fb1387649e.jpg"
+          }
+        },
+        hash: "accommodation16_fb1387649e",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 431.71,
+        url: "/uploads/accommodation16_fb1387649e.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:02.000Z",
+        updated_at: "2022-04-29T07:01:02.000Z"
+      },
+      {
+        id: 42,
+        name: "acc6.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 2700,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_acc6.jpg",
+            hash: "thumbnail_acc6_a359ddfcff",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 4.42,
+            path: null,
+            url: "/uploads/thumbnail_acc6_a359ddfcff.jpg"
+          },
+          large: {
+            name: "large_acc6.jpg",
+            hash: "large_acc6_a359ddfcff",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 70.79,
+            path: null,
+            url: "/uploads/large_acc6_a359ddfcff.jpg"
+          },
+          medium: {
+            name: "medium_acc6.jpg",
+            hash: "medium_acc6_a359ddfcff",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 45.7,
+            path: null,
+            url: "/uploads/medium_acc6_a359ddfcff.jpg"
+          },
+          small: {
+            name: "small_acc6.jpg",
+            hash: "small_acc6_a359ddfcff",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 25,
+            path: null,
+            url: "/uploads/small_acc6_a359ddfcff.jpg"
+          }
+        },
+        hash: "acc6_a359ddfcff",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 394.69,
+        url: "/uploads/acc6_a359ddfcff.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:02.000Z",
+        updated_at: "2022-04-29T07:01:02.000Z"
+      }
+    ]
+  },
+  {
+    id: 19,
+    name: "Park Bergen",
+    published_at: "2022-04-29T07:01:50.000Z",
+    created_at: "2022-04-29T07:01:50.000Z",
+    updated_at: "2022-04-29T07:08:41.000Z",
+    description: "Cozy apartment of 84 sqm 2 bedroom with exit to balcony in quiet backyard. Private walk-in wardrobe. Open plan living room and kitchen",
+    address: "Ulriksdal 23, 5009 Bergen",
+    bedrooms: 2,
+    bathrooms: 2,
+    priceday: 110,
+    priceweek: 550,
+    amenities: "{"
+    WI - FI ":false,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":false,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 43,
+        name: "accommodation3.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 1201,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation3.jpg",
+            hash: "thumbnail_accommodation3_69faba2f99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 5.74,
+            path: null,
+            url: "/uploads/thumbnail_accommodation3_69faba2f99.jpg"
+          },
+          large: {
+            name: "large_accommodation3.jpg",
+            hash: "large_accommodation3_69faba2f99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 66.25,
+            path: null,
+            url: "/uploads/large_accommodation3_69faba2f99.jpg"
+          },
+          medium: {
+            name: "medium_accommodation3.jpg",
+            hash: "medium_accommodation3_69faba2f99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 37.32,
+            path: null,
+            url: "/uploads/medium_accommodation3_69faba2f99.jpg"
+          },
+          small: {
+            name: "small_accommodation3.jpg",
+            hash: "small_accommodation3_69faba2f99",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 334,
+            size: 18.29,
+            path: null,
+            url: "/uploads/small_accommodation3_69faba2f99.jpg"
+          }
+        },
+        hash: "accommodation3_69faba2f99",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 210.32,
+        url: "/uploads/accommodation3_69faba2f99.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:50.000Z",
+        updated_at: "2022-04-29T07:01:50.000Z"
+      },
+      {
+        id: 44,
+        name: "acc9.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 1194,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_acc9.jpg",
+            hash: "thumbnail_acc9_723ec25bcf",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 235,
+            height: 156,
+            size: 7.52,
+            path: null,
+            url: "/uploads/thumbnail_acc9_723ec25bcf.jpg"
+          },
+          large: {
+            name: "large_acc9.jpg",
+            hash: "large_acc9_723ec25bcf",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 663,
+            size: 83.33,
+            path: null,
+            url: "/uploads/large_acc9_723ec25bcf.jpg"
+          },
+          medium: {
+            name: "medium_acc9.jpg",
+            hash: "medium_acc9_723ec25bcf",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 498,
+            size: 48.64,
+            path: null,
+            url: "/uploads/medium_acc9_723ec25bcf.jpg"
+          },
+          small: {
+            name: "small_acc9.jpg",
+            hash: "small_acc9_723ec25bcf",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 332,
+            size: 24.72,
+            path: null,
+            url: "/uploads/small_acc9_723ec25bcf.jpg"
+          }
+        },
+        hash: "acc9_723ec25bcf",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 329.54,
+        url: "/uploads/acc9_723ec25bcf.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:50.000Z",
+        updated_at: "2022-04-29T07:01:50.000Z"
+      },
+      {
+        id: 45,
+        name: "acc4.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 2700,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_acc4.jpg",
+            hash: "thumbnail_acc4_20e0c424d8",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 104,
+            height: 156,
+            size: 4.7,
+            path: null,
+            url: "/uploads/thumbnail_acc4_20e0c424d8.jpg"
+          },
+          large: {
+            name: "large_acc4.jpg",
+            hash: "large_acc4_20e0c424d8",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 667,
+            height: 1000,
+            size: 84.2,
+            path: null,
+            url: "/uploads/large_acc4_20e0c424d8.jpg"
+          },
+          medium: {
+            name: "medium_acc4.jpg",
+            hash: "medium_acc4_20e0c424d8",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 750,
+            size: 53.04,
+            path: null,
+            url: "/uploads/medium_acc4_20e0c424d8.jpg"
+          },
+          small: {
+            name: "small_acc4.jpg",
+            hash: "small_acc4_20e0c424d8",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 333,
+            height: 500,
+            size: 27.73,
+            path: null,
+            url: "/uploads/small_acc4_20e0c424d8.jpg"
+          }
+        },
+        hash: "acc4_20e0c424d8",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 543.47,
+        url: "/uploads/acc4_20e0c424d8.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:50.000Z",
+        updated_at: "2022-04-29T07:01:50.000Z"
+      },
+      {
+        id: 46,
+        name: "accommodation14.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1799,
+        height: 3000,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation14.jpg",
+            hash: "thumbnail_accommodation14_c47730418b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 94,
+            height: 156,
+            size: 3.72,
+            path: null,
+            url: "/uploads/thumbnail_accommodation14_c47730418b.jpg"
+          },
+          large: {
+            name: "large_accommodation14.jpg",
+            hash: "large_accommodation14_c47730418b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 600,
+            height: 1000,
+            size: 74.35,
+            path: null,
+            url: "/uploads/large_accommodation14_c47730418b.jpg"
+          },
+          medium: {
+            name: "medium_accommodation14.jpg",
+            hash: "medium_accommodation14_c47730418b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 450,
+            height: 750,
+            size: 45.92,
+            path: null,
+            url: "/uploads/medium_accommodation14_c47730418b.jpg"
+          },
+          small: {
+            name: "small_accommodation14.jpg",
+            hash: "small_accommodation14_c47730418b",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 300,
+            height: 500,
+            size: 24.15,
+            path: null,
+            url: "/uploads/small_accommodation14_c47730418b.jpg"
+          }
+        },
+        hash: "accommodation14_c47730418b",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 426.44,
+        url: "/uploads/accommodation14_c47730418b.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:01:50.000Z",
+        updated_at: "2022-04-29T07:01:50.000Z"
+      }
+    ]
+  },
+  {
+    id: 20,
+    name: "Paradise bnb",
+    published_at: "2022-04-29T07:02:48.000Z",
+    created_at: "2022-04-29T07:02:48.000Z",
+    updated_at: "2022-04-29T07:08:01.000Z",
+    description: "Small Studio close to city center in Bergen (only 15 minutes walk) Good space for one person. Small kitchen where you can make your own food if you like. You will have your own bathroom. There is also possible for a small amount to rent an indoor parking space.",
+    address: "Gimleveien 20-6, 5052 Bergen",
+    bedrooms: 2,
+    bathrooms: 2,
+    priceday: 105,
+    priceweek: 520,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":false,"
+    Child Friendly ":false,"
+    Accessible ":true,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 0,
+    votestotal: 0,
+    visits: 0,
+    favorites: 0,
+    score: 0,
+    images: [{
+        id: 48,
+        name: "promotion1.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion1.jpg",
+            hash: "thumbnail_promotion1_0f3aefd9f4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.01,
+            path: null,
+            url: "/uploads/thumbnail_promotion1_0f3aefd9f4.jpg"
+          },
+          large: {
+            name: "large_promotion1.jpg",
+            hash: "large_promotion1_0f3aefd9f4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 80.68,
+            path: null,
+            url: "/uploads/large_promotion1_0f3aefd9f4.jpg"
+          },
+          medium: {
+            name: "medium_promotion1.jpg",
+            hash: "medium_promotion1_0f3aefd9f4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 50.21,
+            path: null,
+            url: "/uploads/medium_promotion1_0f3aefd9f4.jpg"
+          },
+          small: {
+            name: "small_promotion1.jpg",
+            hash: "small_promotion1_0f3aefd9f4",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 26.41,
+            path: null,
+            url: "/uploads/small_promotion1_0f3aefd9f4.jpg"
+          }
+        },
+        hash: "promotion1_0f3aefd9f4",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 269.16,
+        url: "/uploads/promotion1_0f3aefd9f4.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:02:48.000Z",
+        updated_at: "2022-04-29T07:02:48.000Z"
+      },
+      {
+        id: 47,
+        name: "accommodation21.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation21.jpg",
+            hash: "thumbnail_accommodation21_a5a828d907",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.26,
+            path: null,
+            url: "/uploads/thumbnail_accommodation21_a5a828d907.jpg"
+          },
+          large: {
+            name: "large_accommodation21.jpg",
+            hash: "large_accommodation21_a5a828d907",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 81.87,
+            path: null,
+            url: "/uploads/large_accommodation21_a5a828d907.jpg"
+          },
+          medium: {
+            name: "medium_accommodation21.jpg",
+            hash: "medium_accommodation21_a5a828d907",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 50.8,
+            path: null,
+            url: "/uploads/medium_accommodation21_a5a828d907.jpg"
+          },
+          small: {
+            name: "small_accommodation21.jpg",
+            hash: "small_accommodation21_a5a828d907",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 26.86,
+            path: null,
+            url: "/uploads/small_accommodation21_a5a828d907.jpg"
+          }
+        },
+        hash: "accommodation21_a5a828d907",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 253.77,
+        url: "/uploads/accommodation21_a5a828d907.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:02:48.000Z",
+        updated_at: "2022-04-29T07:02:48.000Z"
+      },
+      {
+        id: 49,
+        name: "promotion3.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 1200,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion3.jpg",
+            hash: "thumbnail_promotion3_184259b502",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.22,
+            path: null,
+            url: "/uploads/thumbnail_promotion3_184259b502.jpg"
+          },
+          large: {
+            name: "large_promotion3.jpg",
+            hash: "large_promotion3_184259b502",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 87.63,
+            path: null,
+            url: "/uploads/large_promotion3_184259b502.jpg"
+          },
+          medium: {
+            name: "medium_promotion3.jpg",
+            hash: "medium_promotion3_184259b502",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 52.54,
+            path: null,
+            url: "/uploads/medium_promotion3_184259b502.jpg"
+          },
+          small: {
+            name: "small_promotion3.jpg",
+            hash: "small_promotion3_184259b502",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 27.26,
+            path: null,
+            url: "/uploads/small_promotion3_184259b502.jpg"
+          }
+        },
+        hash: "promotion3_184259b502",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 254.45,
+        url: "/uploads/promotion3_184259b502.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:02:48.000Z",
+        updated_at: "2022-04-29T07:02:48.000Z"
+      },
+      {
+        id: 50,
+        name: "accommodation31.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1406,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation31.jpg",
+            hash: "thumbnail_accommodation31_7215a5c429",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 213,
+            height: 156,
+            size: 6.25,
+            path: null,
+            url: "/uploads/thumbnail_accommodation31_7215a5c429.jpg"
+          },
+          large: {
+            name: "large_accommodation31.jpg",
+            hash: "large_accommodation31_7215a5c429",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 732,
+            size: 111.62,
+            path: null,
+            url: "/uploads/large_accommodation31_7215a5c429.jpg"
+          },
+          medium: {
+            name: "medium_accommodation31.jpg",
+            hash: "medium_accommodation31_7215a5c429",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 549,
+            size: 60.35,
+            path: null,
+            url: "/uploads/medium_accommodation31_7215a5c429.jpg"
+          },
+          small: {
+            name: "small_accommodation31.jpg",
+            hash: "small_accommodation31_7215a5c429",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 366,
+            size: 27.31,
+            path: null,
+            url: "/uploads/small_accommodation31_7215a5c429.jpg"
+          }
+        },
+        hash: "accommodation31_7215a5c429",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 425.19,
+        url: "/uploads/accommodation31_7215a5c429.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:02:48.000Z",
+        updated_at: "2022-04-29T07:02:48.000Z"
+      },
+      {
+        id: 51,
+        name: "accommodation15.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1800,
+        height: 2718,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation15.jpg",
+            hash: "thumbnail_accommodation15_8f6e5fb354",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 103,
+            height: 156,
+            size: 2.94,
+            path: null,
+            url: "/uploads/thumbnail_accommodation15_8f6e5fb354.jpg"
+          },
+          large: {
+            name: "large_accommodation15.jpg",
+            hash: "large_accommodation15_8f6e5fb354",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 662,
+            height: 1000,
+            size: 48.67,
+            path: null,
+            url: "/uploads/large_accommodation15_8f6e5fb354.jpg"
+          },
+          medium: {
+            name: "medium_accommodation15.jpg",
+            hash: "medium_accommodation15_8f6e5fb354",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 497,
+            height: 750,
+            size: 30.28,
+            path: null,
+            url: "/uploads/medium_accommodation15_8f6e5fb354.jpg"
+          },
+          small: {
+            name: "small_accommodation15.jpg",
+            hash: "small_accommodation15_8f6e5fb354",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 331,
+            height: 500,
+            size: 15.76,
+            path: null,
+            url: "/uploads/small_accommodation15_8f6e5fb354.jpg"
+          }
+        },
+        hash: "accommodation15_8f6e5fb354",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 289.77,
+        url: "/uploads/accommodation15_8f6e5fb354.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:02:49.000Z",
+        updated_at: "2022-04-29T07:02:49.000Z"
+      }
+    ]
+  },
+  {
+    id: 21,
+    name: "Bergen Magic Royal",
+    published_at: "2022-04-29T07:03:33.000Z",
+    created_at: "2022-04-29T07:03:33.000Z",
+    updated_at: "2022-04-30T04:29:06.000Z",
+    description: "Entrance hall, bathroom / WC, living room with open kitchen, attic and shared roof terrace. The space All apartment is for guest:) Guest access Apartment is all for guest:) You Are welcome :)",
+    address: "Fjøsangerveien 50C, 5059 Bergen",
+    bedrooms: 3,
+    bathrooms: 2,
+    priceday: 130,
+    priceweek: 610,
+    amenities: "{"
+    WI - FI ":true,"
+    Swimming Pool ":true,"
+    Child Friendly ":true,"
+    Accessible ":true,"
+    Washing Machine ":true,"
+    Fitness ":true}",
+    votes: 2,
+    votestotal: 6,
+    visits: 7,
+    favorites: 1,
+    score: 3,
+    images: [{
+        id: 52,
+        name: "accommodation19.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1307,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation19.jpg",
+            hash: "thumbnail_accommodation19_42f11eb2df",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 229,
+            height: 156,
+            size: 7.75,
+            path: null,
+            url: "/uploads/thumbnail_accommodation19_42f11eb2df.jpg"
+          },
+          large: {
+            name: "large_accommodation19.jpg",
+            hash: "large_accommodation19_42f11eb2df",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 681,
+            size: 74.96,
+            path: null,
+            url: "/uploads/large_accommodation19_42f11eb2df.jpg"
+          },
+          medium: {
+            name: "medium_accommodation19.jpg",
+            hash: "medium_accommodation19_42f11eb2df",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 511,
+            size: 47.49,
+            path: null,
+            url: "/uploads/medium_accommodation19_42f11eb2df.jpg"
+          },
+          small: {
+            name: "small_accommodation19.jpg",
+            hash: "small_accommodation19_42f11eb2df",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 340,
+            size: 26.39,
+            path: null,
+            url: "/uploads/small_accommodation19_42f11eb2df.jpg"
+          }
+        },
+        hash: "accommodation19_42f11eb2df",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 221.77,
+        url: "/uploads/accommodation19_42f11eb2df.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:03:33.000Z",
+        updated_at: "2022-04-29T07:03:33.000Z"
+      },
+      {
+        id: 53,
+        name: "promotion1.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1280,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_promotion1.jpg",
+            hash: "thumbnail_promotion1_710dd7b9e1",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 234,
+            height: 156,
+            size: 8.01,
+            path: null,
+            url: "/uploads/thumbnail_promotion1_710dd7b9e1.jpg"
+          },
+          large: {
+            name: "large_promotion1.jpg",
+            hash: "large_promotion1_710dd7b9e1",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 667,
+            size: 80.68,
+            path: null,
+            url: "/uploads/large_promotion1_710dd7b9e1.jpg"
+          },
+          medium: {
+            name: "medium_promotion1.jpg",
+            hash: "medium_promotion1_710dd7b9e1",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 500,
+            size: 50.21,
+            path: null,
+            url: "/uploads/medium_promotion1_710dd7b9e1.jpg"
+          },
+          small: {
+            name: "small_promotion1.jpg",
+            hash: "small_promotion1_710dd7b9e1",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 333,
+            size: 26.41,
+            path: null,
+            url: "/uploads/small_promotion1_710dd7b9e1.jpg"
+          }
+        },
+        hash: "promotion1_710dd7b9e1",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 269.16,
+        url: "/uploads/promotion1_710dd7b9e1.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:03:33.000Z",
+        updated_at: "2022-04-29T07:03:33.000Z"
+      },
+      {
+        id: 54,
+        name: "accommodation23.jpg",
+        alternativeText: null,
+        caption: null,
+        width: 1920,
+        height: 1745,
+        formats: {
+          thumbnail: {
+            name: "thumbnail_accommodation23.jpg",
+            hash: "thumbnail_accommodation23_3cffe9e55c",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 172,
+            height: 156,
+            size: 6.41,
+            path: null,
+            url: "/uploads/thumbnail_accommodation23_3cffe9e55c.jpg"
+          },
+          large: {
+            name: "large_accommodation23.jpg",
+            hash: "large_accommodation23_3cffe9e55c",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 1000,
+            height: 909,
+            size: 115.17,
+            path: null,
+            url: "/uploads/large_accommodation23_3cffe9e55c.jpg"
+          },
+          medium: {
+            name: "medium_accommodation23.jpg",
+            hash: "medium_accommodation23_3cffe9e55c",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 750,
+            height: 682,
+            size: 68.46,
+            path: null,
+            url: "/uploads/medium_accommodation23_3cffe9e55c.jpg"
+          },
+          small: {
+            name: "small_accommodation23.jpg",
+            hash: "small_accommodation23_3cffe9e55c",
+            ext: ".jpg",
+            mime: "image/jpeg",
+            width: 500,
+            height: 454,
+            size: 34.08,
+            path: null,
+            url: "/uploads/small_accommodation23_3cffe9e55c.jpg"
+          }
+        },
+        hash: "accommodation23_3cffe9e55c",
+        ext: ".jpg",
+        mime: "image/jpeg",
+        size: 421.05,
+        url: "/uploads/accommodation23_3cffe9e55c.jpg",
+        previewUrl: null,
+        provider: "local",
+        provider_metadata: null,
+        created_at: "2022-04-29T07:03:34.000Z",
+        updated_at: "2022-04-29T07:03:34.000Z"
+      }
+    ]
+  }
+]
