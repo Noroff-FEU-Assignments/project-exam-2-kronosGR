@@ -105,7 +105,7 @@ export default function Enquire({ accommodation, error }) {
           <FormInput
             id='email'
             title='Email'
-            type='text'
+            type='tel'
             placeholder='Enter your email'
             register={{ ...register('email') }}
           />
