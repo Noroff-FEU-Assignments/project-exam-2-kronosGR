@@ -39,6 +39,7 @@ export const EnquireItem = ({ item }) => {
       <div className={styles.title_container}>
         {isRead && (
           <Image
+            title='Read'
             src='/icons/bell-outline.svg'
             width={30}
             height={30}
@@ -47,7 +48,13 @@ export const EnquireItem = ({ item }) => {
         )}
 
         {!isRead && (
-          <Image src='/icons/bell.svg' width={30} height={30} alt={item.fullname} />
+          <Image
+            title='Not read'
+            src='/icons/bell.svg'
+            width={30}
+            height={30}
+            alt={item.fullname}
+          />
         )}
         <span className={styles.name}>{item.fullname}</span>
         <span className={styles.phone}>{item.phone}</span>

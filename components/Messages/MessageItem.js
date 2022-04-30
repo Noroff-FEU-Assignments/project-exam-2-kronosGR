@@ -38,11 +38,23 @@ export const MessageItem = ({ item }) => {
     <div className={styles.container} onClick={clickHandler}>
       <div className={styles.title_container}>
         {isRead && (
-          <Image src='/icons/bell-outline.svg' width={30} height={30} alt={item.name} />
+          <Image
+            title='Read'
+            src='/icons/bell-outline.svg'
+            width={30}
+            height={30}
+            alt={item.name}
+          />
         )}
 
         {!isRead && (
-          <Image src='/icons/bell.svg' width={30} height={30} alt={item.name} />
+          <Image
+            title='Not read'
+            src='/icons/bell.svg'
+            width={30}
+            height={30}
+            alt={item.name}
+          />
         )}
         <span className={styles.name}>{item.name}</span>
       </div>
