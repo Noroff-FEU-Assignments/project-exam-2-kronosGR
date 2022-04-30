@@ -15,6 +15,17 @@
   border-radius: 10px !important;
 }
 
+.container:hover {
+  cursor: pointer;
+}
+
+.container:hover .title {
+  cursor: pointer;
+  background: var(--color-black) 0% 0% no-repeat padding-box;
+  opacity: 0.8;
+  color: var(--color-white);
+}
+
 .title {
   z-index: 2222;
   font-family: var(--font-heading);
@@ -26,13 +37,6 @@
   font-weight: bold;
   background: var(--color-white) 0% 0% no-repeat padding-box;
   opacity: 0.8;
-}
-
-.title:hover {
-  background: var(--color-black) 0% 0% no-repeat padding-box;
-  opacity: 0.8;
-  color: var(--color-white);
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
