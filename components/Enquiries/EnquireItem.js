@@ -78,5 +78,5 @@ export const EnquireItem = ({ item }) => {
 };
 
 EnquireItem.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.object,
 };

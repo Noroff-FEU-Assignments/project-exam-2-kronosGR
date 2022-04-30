@@ -14,5 +14,5 @@ export const EnquireList = ({ enquiries }) => {
 };
 
 EnquireList.propTypes = {
-  enquiries: PropTypes.array.isRequired,
+  enquiries: PropTypes.array,
 };

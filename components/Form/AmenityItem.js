@@ -28,9 +28,9 @@ export default function AmenityItem({ src, alt, width, height, onToggle }) {
 }
 
 AmenityItem.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
   onToggle: PropTypes.func,
 };

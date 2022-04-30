@@ -187,7 +187,7 @@ export default function Admin() {
             id='bedrooms'
             title='Bedrooms'
             type='number'
-            placeholder={0}
+            placeholder='0'
             width='80%'
             align='right'
             value={0}
@@ -200,7 +200,7 @@ export default function Admin() {
             id='bathrooms'
             title='Bathrooms'
             type='number'
-            placeholder={0}
+            placeholder='0'
             width='80%'
             align='right'
             value={0}
@@ -216,7 +216,7 @@ export default function Admin() {
             id='priceDay'
             title='Price/Day'
             type='number'
-            placeholder={0}
+            placeholder='0'
             width='80%'
             align='right'
             value={0}
@@ -229,7 +229,7 @@ export default function Admin() {
             id='priceWeek'
             title='Price/Week'
             type='number'
-            placeholder={0}
+            placeholder='0'
             width='80%'
             align='right'
             value={0}

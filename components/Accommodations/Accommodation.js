@@ -34,5 +34,5 @@ export const Accommodation = ({ item }) => {
 };
 
 Accommodation.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.objectisRequired,
 };
