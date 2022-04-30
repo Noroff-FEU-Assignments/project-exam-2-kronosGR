@@ -5,6 +5,7 @@ import styles from '../../styles/EnquireItem.module.css';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
 import { updateEnquireRead } from '../../BackEnd/updateEnquireRead';
 import SameLine from '../Layout/SameLine';
+import { PropTypes } from 'prop-types';
 
 export const EnquireItem = ({ item }) => {
   const [enq, setEnq] = useState('');
@@ -74,4 +75,8 @@ export const EnquireItem = ({ item }) => {
       </SameLine>
     </div>
   );
+};
+
+EnquireItem.propTypes = {
+  item: PropTypes.object.isRequired,
 };

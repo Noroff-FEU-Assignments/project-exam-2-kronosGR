@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import styles from '../../styles/AccommodationCarousel.module.css';
 import { API_URL } from '../../constants/Api';
+import { PropTypes } from 'prop-types';
 
 export const AccommodationCarousel = ({ item }) => {
   const [active, setActive] = useState(0);
@@ -46,4 +47,8 @@ export const AccommodationCarousel = ({ item }) => {
       </div>
     </div>
   );
+};
+
+AccommodationCarousel.propTypes = {
+  item: PropTypes.object.isRequired,
 };

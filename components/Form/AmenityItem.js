@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from '../../styles/AmenityItem.module.css';
+import { PropTypes } from 'prop-types';
 
 export default function AmenityItem({ src, alt, width, height, onToggle }) {
   return (
@@ -25,3 +26,11 @@ export default function AmenityItem({ src, alt, width, height, onToggle }) {
     </div>
   );
 }
+
+AmenityItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  onToggle: PropTypes.func,
+};

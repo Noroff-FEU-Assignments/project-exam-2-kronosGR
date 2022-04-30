@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from '../../styles/AccommodationsList.module.css';
 import { Accommodation } from './Accommodation';
+import { PropTypes } from 'prop-types';
 
 export const AccommodationsList = ({ accommodations }) => {
   return (
@@ -11,4 +12,8 @@ export const AccommodationsList = ({ accommodations }) => {
       ))}
     </div>
   );
+};
+
+AccommodationsList.propTypes = {
+  accommodations: PropTypes.array.isRequired,
 };

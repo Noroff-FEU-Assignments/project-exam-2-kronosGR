@@ -3,6 +3,7 @@ import React from 'react';
 
 import styles from '../../styles/AccommodationImage.module.css';
 import { API_URL } from '../../constants/Api';
+import { PropTypes } from 'prop-types';
 
 export const AccommodationImage = ({ item }) => {
   return (
@@ -15,4 +16,8 @@ export const AccommodationImage = ({ item }) => {
       />
     </div>
   );
+};
+
+AccommodationImage.propTypes = {
+  item: PropTypes.object.isRequired,
 };

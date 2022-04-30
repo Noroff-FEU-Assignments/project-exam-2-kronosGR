@@ -38,7 +38,7 @@ export default function Messages() {
       </Head>
       <Auth />
       <h1 className='mb60'>Messages</h1>
-      <MessageList messages={messages} />
+      <MesRsageList messages={messages} />
       <Error msg='Something went wrong' error={error} />
     </LayoutAdmin>
   );

@@ -5,6 +5,7 @@ import styles from '../../styles/Accommodation.module.css';
 import Button from '../Button';
 import Right from '../Layout/Right';
 import { AccommodationImage } from './AccommodationImage';
+import PropTypes from 'prop-types';
 
 export const Accommodation = ({ item }) => {
   const router = useRouter();
@@ -30,4 +31,8 @@ export const Accommodation = ({ item }) => {
       </Right>
     </div>
   );
+};
+
+Accommodation.propTypes = {
+  item: PropTypes.object.isRequired,
 };
