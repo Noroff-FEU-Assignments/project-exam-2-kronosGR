@@ -27,8 +27,6 @@ export default function Search({ accommodations, error, searchFor }) {
 export async function getServerSideProps(context) {
   const searchFor = context.query.searchFor;
   const res = await searchAccommodationsByName(searchFor);
-  console.log(res.result);
-  console.log(res.error);
   return {
     props: {
       accommodations: res.result,

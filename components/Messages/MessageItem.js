@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../../styles/MessageItem.module.css';
 import { updateMessageRead } from '../../BackEnd/updateMessageRead';
 import { loadFromLocalStorage, USER } from '../../utils/localStorage';
+import { PropTypes } from 'prop-types';
 
 export const MessageItem = ({ item }) => {
   const [msg, setMsg] = useState('');
@@ -70,4 +71,8 @@ export const MessageItem = ({ item }) => {
       )}
     </div>
   );
+};
+
+MessageItem.propTypes = {
+  item: PropTypes.object,
 };

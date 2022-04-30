@@ -3,6 +3,7 @@ import React from 'react';
 import { getAmenityByName } from '../constants/Amenities';
 
 import styles from '../styles/ShowAmenities.module.css';
+import { PropTypes } from 'prop-types';
 
 export const ShowAmenities = ({ amenities }) => {
   return (
@@ -25,4 +26,8 @@ export const ShowAmenities = ({ amenities }) => {
       })}
     </div>
   );
+};
+
+ShowAmenities.propTypes = {
+  amenities: PropTypes.string,
 };

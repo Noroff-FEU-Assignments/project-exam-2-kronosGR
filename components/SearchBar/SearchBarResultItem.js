@@ -4,6 +4,7 @@ import React from 'react';
 import { API_URL } from '../../constants/Api';
 
 import styles from '../../styles/SearchBarResultItem.module.css';
+import { PropTypes } from 'prop-types';
 
 export const SearchBarResultItem = ({ accommodation }) => {
   const router = useRouter();
@@ -26,4 +27,8 @@ export const SearchBarResultItem = ({ accommodation }) => {
       <span className={styles.title}>{accommodation.name}</span>
     </div>
   );
+};
+
+SearchBarResultItem.propTypes = {
+  accommodation: PropTypes.object,
 };

@@ -2,15 +2,9 @@ import React, { useState } from 'react';
 
 import styles from '../../styles/SearchInput.module.css';
 import { SearchBarResult } from './SearchBarResult';
+import { PropTypes } from 'prop-types';
 
-export default function SearchInput({
-  id,
-  placeholder,
-  type,
-  width = '100%',
-  align = 'left',
-  onChange,
-}) {
+export default function SearchInput({ id, placeholder, type, width, align, onChange }) {
   const [searchFor, setSearchFor] = useState('');
 
   const handleChange = (e) => {
@@ -33,3 +27,17 @@ export default function SearchInput({
     </div>
   );
 }
+
+SearchInput.propTypes = {
+  id: PropTypes.string,
+  placeholder: PropTypes.string,
+  title: PropTypes.string,
+  width: PropTypes.string,
+  align: PropTypes.string,
+  onChange: PropTypes.func,
+};
+
+SearchInput.defaultProps = {
+  width: '100%',
+  align: 'left',
+};

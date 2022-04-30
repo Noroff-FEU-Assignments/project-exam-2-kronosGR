@@ -5,6 +5,7 @@ import styles from '../../styles/SearchBarResult.module.css';
 import { SearchBarResultItem } from './SearchBarResultItem';
 import Spacer from '../Layout/Spacer';
 import { Error } from '../Error';
+import { PropTypes } from 'prop-types';
 
 export const SearchBarResult = ({ searchFor }) => {
   const [accommodations, setAccommodations] = useState([]);
@@ -47,4 +48,8 @@ export const SearchBarResult = ({ searchFor }) => {
       )}
     </div>
   );
+};
+
+SearchBarResult.propTypes = {
+  searchFor: PropTypes.string,
 };

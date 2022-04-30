@@ -3,6 +3,7 @@ import React from 'react';
 import { EMPTY, FULL, HALF } from '../../constants/StarState';
 
 import styles from '../../styles/Star.module.css';
+import { PropTypes } from 'prop-types';
 
 export const Star = ({ kind, id, onClick }) => {
   let icon = '';
@@ -30,4 +31,10 @@ export const Star = ({ kind, id, onClick }) => {
       onClick={onClick}
     />
   );
+};
+
+Star.propTypes = {
+  kind: PropTypes.string,
+  id: PropTypes.number,
+  onClick: PropTypes.func,
 };

@@ -5,6 +5,7 @@ import { EMPTY, FULL, HALF } from '../../constants/StarState';
 import { Error } from '../Error';
 
 import { Star } from './Star';
+import { PropTypes } from 'prop-types';
 
 export const Rating = ({ votes, votesTotal, aid }) => {
   const [error, setError] = useState(null);
@@ -70,4 +71,10 @@ export const Rating = ({ votes, votesTotal, aid }) => {
       </>
     </div>
   );
+};
+
+Rating.propTypes = {
+  votes: PropTypes.number,
+  votesTotal: PropTypes.number,
+  aid: PropTypes.number,
 };
