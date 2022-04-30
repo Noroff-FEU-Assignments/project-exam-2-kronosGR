@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import styles from '../../../styles/HeroAdmin.module.css';
+import { PropTypes } from 'prop-types';
 
 export default function HeroAdmin({ children }) {
   return (
@@ -10,3 +11,7 @@ export default function HeroAdmin({ children }) {
     </div>
   );
 }
+
+HeroAdmin.propTypes = {
+  children: PropTypes.node,
+};

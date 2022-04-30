@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export const Favorite = ({ isFavorite, click }) => {
   const style = { cursor: 'pointer' };
@@ -26,4 +27,9 @@ export const Favorite = ({ isFavorite, click }) => {
       )}
     </div>
   );
+};
+
+Favorite.propTypes = {
+  isFavorite: PropTypes.bool,
+  click: PropTypes.func,
 };

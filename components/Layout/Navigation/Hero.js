@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import styles from '../../../styles/Hero.module.css';
+import { PropTypes } from 'prop-types';
 
 export default function Hero({ children }) {
   return (
@@ -10,3 +11,7 @@ export default function Hero({ children }) {
     </div>
   );
 }
+
+Hero.propTypes = {
+  children: PropTypes.node,
+};

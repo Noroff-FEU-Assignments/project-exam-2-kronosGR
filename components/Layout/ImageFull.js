@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 import styles from '../../styles/ImageFull.module.css';
+import { PropTypes } from 'prop-types';
 
 export default function ImageFull({ src, onClick }) {
   return (
@@ -10,3 +11,8 @@ export default function ImageFull({ src, onClick }) {
     </div>
   );
 }
+
+ImageFull.propTypes = {
+  src: PropTypes.string,
+  onClick: PropTypes.func,
+};

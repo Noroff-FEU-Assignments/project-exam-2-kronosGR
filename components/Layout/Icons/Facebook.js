@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export default function Facebook({ width, height }) {
   return (
@@ -18,3 +19,8 @@ export default function Facebook({ width, height }) {
     </svg>
   );
 }
+
+Facebook.propTypes = {
+  width: PropTypes.number,
+  heigh: PropTypes.number,
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export default function Twitter({ width, height }) {
   return (
@@ -21,3 +22,8 @@ export default function Twitter({ width, height }) {
     </svg>
   );
 }
+
+Twitter.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+};

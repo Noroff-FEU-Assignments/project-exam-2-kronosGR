@@ -10,7 +10,6 @@ export default function Images() {
   const [imageUrl, setImageUrl] = useState('');
 
   const handleClick = (img) => {
-    console.log(img);
     setImageVisible(true);
     setImageUrl(img);
   };

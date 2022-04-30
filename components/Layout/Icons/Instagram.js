@@ -1,5 +1,6 @@
 import React from 'react';
 import { Colors } from '../../../constants/Colors';
+import { PropTypes } from 'prop-types';
 
 export default function Instagram({ width, height }) {
   return (
@@ -44,3 +45,8 @@ export default function Instagram({ width, height }) {
     </svg>
   );
 }
+
+Instagram.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+};

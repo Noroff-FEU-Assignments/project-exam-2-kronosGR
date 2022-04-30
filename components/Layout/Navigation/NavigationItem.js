@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 
 import styles from '../../../styles/NavigationItem.module.css';
+import { PropTypes } from 'prop-types';
 
 export default function NavigationItem({ href, src, title, alt, width, height }) {
   const router = useRouter();
@@ -18,3 +19,12 @@ export default function NavigationItem({ href, src, title, alt, width, height })
     </li>
   );
 }
+
+NavigationItem.propTypes = {
+  href: PropTypes.string,
+  src: PropTypes.string,
+  title: PropTypes.string,
+  alt: PropTypes.string,
+  width: PropTypes.string,
+  heigh: PropTypes.string,
+};

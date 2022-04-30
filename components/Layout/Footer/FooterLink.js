@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 import styles from '../../../styles/FooterLink.module.css';
+import { PropTypes } from 'prop-types';
 export default function FooterLink({ href, children }) {
   return (
     <div>
@@ -12,3 +12,8 @@ export default function FooterLink({ href, children }) {
     </div>
   );
 }
+
+FooterLink.propTypes = {
+  href: PropTypes.string,
+  children: PropTypes.node,
+};
