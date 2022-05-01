@@ -3,7 +3,6 @@ import NavAdmin from './Navigation/NavAdmin';
 
 import styles from '../../styles/LayoutAdmin.module.css';
 import Footer from './Footer/Footer';
-import Spacer from './Spacer';
 import HeroAdmin from './Navigation/HeroAdmin';
 import Head from 'next/head';
 import { PropTypes } from 'prop-types';
@@ -22,7 +21,6 @@ export default function LayoutAdmin({ children }) {
         </HeroAdmin>
       </header>
       <main className={styles.layout}>{children}</main>
-      <Spacer size={64} />
       <Footer />
     </>
   );

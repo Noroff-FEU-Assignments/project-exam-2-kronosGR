@@ -17,7 +17,6 @@ export default function Layout({ children }) {
       </header>
       <div className={styles.wrapper}>
         <main className={styles.layout}>{children}</main>
-        <Spacer size={64} />
         <Footer />
       </div>
     </>
