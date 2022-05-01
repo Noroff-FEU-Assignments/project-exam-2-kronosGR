@@ -11,7 +11,7 @@ export default function NavigationItem({ href, src, title, alt, width, height })
   return (
     <li>
       <Link href={href}>
-        <a className={`${router.pathname === href ? 'active' : ''} ${styles.nav_a}`}>
+        <a className={`${router.asPath === href ? 'active' : ''} ${styles.nav_a}`}>
           <Image src={src} alt={alt} width={width} height={height} className='red mh5' />
           {title}
         </a>
