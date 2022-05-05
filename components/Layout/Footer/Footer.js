@@ -21,7 +21,7 @@ export default function Footer() {
         </FooterLink>
       </div>
       <div className={styles.copyright}>
-        @ 2020 - Georgios Katsanakis (A.K.A KronosGR)
+        @ 2022 - Georgios Katsanakis (A.K.A KronosGR)
       </div>
     </footer>
   );
