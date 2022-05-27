@@ -1,6 +1,6 @@
 # Holidaze - Project 2
 
-![image](screenshot.png)
+![image](screenshot2.png)
 
 A simple project demonstrating Next.js
 
